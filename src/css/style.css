@@ -39,6 +39,20 @@ body {
     border-radius: .7rem;
 }
 
+.btn-purple {
+    background-color: #770077;
+    color: white;
+    font-weight: 500;
+    border-radius: .7rem;
+}
+
+.btn-purple:hover {
+    background-color: #550255 !important;
+    color: white;
+    font-weight: 500;
+    transition: all .5s ease-in-out
+}
+
 .btn-orange:hover {
     background-color: #e47c06 !important;
     color: white;
@@ -64,4 +78,11 @@ body {
 
 .fw-500 {
     font-weight: 500;
+}
+
+.form-bg-transp {
+    background-color: transparent;
+    border-width: .15rem;
+    border-color: white;
+    border-radius: 1rem;
 }

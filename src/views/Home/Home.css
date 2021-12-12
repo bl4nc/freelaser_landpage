@@ -1,0 +1,284 @@
+#banner_02 {
+    background: linear-gradient(90deg, #990099 5.1%, rgba(190, 43, 108, 0.930115) 69.58%);
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#banner_02 #textos {
+    color: white;
+}
+
+
+/* #banner_02 #textos p {} */
+
+#banner_02 #textos h1 {
+    text-align: center !important;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#banner_02 #textos button {
+    font-size: .9rem;
+}
+
+#banner_03 {
+    position: relative;
+}
+
+#banner_03 #tx_1 {
+    position: absolute;
+    z-index: 2;
+}
+
+#banner_03 #bg {
+    /* position: absolute; */
+    z-index: 1;
+}
+
+#banner_03 h3 {
+    color: #990099;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+#banner_03 .card-deck {
+    margin-top: 1.5rem;
+}
+
+#banner_03 .card img {
+    width: 50%;
+}
+
+#banner_03 .card {
+    color: #990099 !important;
+    background: linear-gradient(165.49deg, #FFFDFE 11.09%, #F7DBE8 87.1%) !important;
+    border: solid 2px;
+    border-radius: 1rem;
+    min-height: 24rem;
+}
+
+#banner_03 .card p {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+#banner_03 .card-title {
+    font-weight: 600;
+}
+
+#banner_03 #div_secnd h1 {
+    font-size: 4rem;
+    margin-top: 15rem;
+    font-weight: 700;
+    color: #990099;
+}
+
+#banner_03 #div_secnd>div {
+    color: #990099;
+    display: flex;
+    justify-content: center;
+}
+
+#banner_03 #div_secnd #t3 {
+    font-size: 7rem;
+    font-weight: 800;
+    margin-top: -2rem !important;
+}
+
+#banner_03 #div_secnd #sessoes {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#banner_03 #div_secnd #sessoes span {
+    font-size: 2.5rem;
+}
+
+.card-col {
+    width: 20% !important;
+    flex: 0 0 20%
+}
+
+#banner_03_mbl {
+    background-image: url("../../assets/img/bg_banner_03_01.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #990099;
+}
+
+#banner_03_mb img {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+#textos_mb_bn_3 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align-last: center;
+    color: #990099;
+    padding-top: 5.5rem;
+}
+
+#textos_mb_bn_3 p {
+    font-weight: 700 !important;
+}
+
+#textos_mb_bn_3>h1 {
+    font-size: 5vh;
+    font-weight: 700;
+}
+
+#textos_mb_bn_3>div>.frist {
+    font-size: 9vh;
+    margin-top: -1rem !important;
+}
+
+#banner_05_mb {
+    color: #990099;
+}
+
+#banner_07_mb {
+    color: #990099;
+}
+
+#card_02_b7_mb {
+    color: white !important;
+    background-color: #990099;
+}
+
+.card-mb {
+    background: linear-gradient(165.49deg, #FFFDFE 11.09%, #F7DBE8 87.1%);
+}
+
+.banner_05_mb_title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#textos_mb_bn_3>div span {
+    font-size: 1.3rem;
+}
+
+#banner_04 {
+    background-color: #990099;
+    color: white;
+    background-image: url("../../assets/img/banner_04_bg.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#banner_04 #agende_sua {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+#banner_04 #av {
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+#banner_05 {
+    color: #990099;
+    background: linear-gradient(165.49deg, #FFFDFE 11.09%, #F7DBE8 87.1%);
+}
+
+#banner_05 .b6-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#banner_05 .card-left {
+    padding-left: 10rem;
+}
+
+#banner_05 .card-right {
+    padding-right: 10rem;
+}
+
+#banner_06 {
+    color: #990099;
+}
+
+#banner_06 h3 {
+    font-weight: 700;
+}
+
+#banner_06 h4 {
+    font-weight: 600;
+}
+
+#banner_06 h5 {
+    color: #FF9011;
+}
+
+.card_redondo .img img {
+    border: solid 2px #FF9011;
+    border-radius: 50%;
+    padding: 1rem;
+    width: 8rem;
+    background: linear-gradient(325.03deg, #F7DBE8 8.94%, rgba(255, 255, 255, 0) 107%);
+}
+
+.card_redondo p {
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.card_redondo_mb .img img {
+    border: solid 2px #FF9011;
+    border-radius: 50%;
+    padding: 1rem;
+    width: 5rem;
+    background: linear-gradient(325.03deg, #F7DBE8 8.94%, rgba(255, 255, 255, 0) 107%);
+}
+
+.card_redondo_mb p {
+    font-weight: 600;
+    margin-top: 1rem;
+    font-size: .8rem;
+}
+
+#banner_7_mb_2 {
+    background-color: #990099;
+}
+
+#banner_7_mb a {
+    cursor: pointer;
+}
+
+#banner_06 button {
+    margin-bottom: -13rem;
+    z-index: 15;
+    position: relative;
+}
+
+#banner_07 #conteudo_b7 {
+    background-color: #990099;
+    color: white;
+}
+
+#b7_texto_01 {
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+#b7_texto_02 {
+    margin-top: -1.3rem !important;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+#b7_texto_03 {
+    margin-top: -1.5rem !important;
+    font-weight: 700;
+    font-size: 3.3rem;
+}
+
+#banner_07 button {
+    width: 70%;
+}

@@ -1,7 +1,10 @@
 #btn_area_cliente {
     background-color: #990099;
     border-radius: 0;
-    color: white
+    color: white;
+    font-weight: 500;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .navbar-light .navbar-toggler-icon {
