@@ -1,0 +1,12 @@
+#___banner_principal {
+    background-color: #990099;
+}
+
+@media (min-width: 600px) {
+    #___banner_principal {
+        background-image: url("../../assets/img/tratamentos_esteticos/bg_01.png");
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

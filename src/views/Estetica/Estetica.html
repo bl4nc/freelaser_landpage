@@ -1,18 +1,27 @@
 <div id="main">
     <Navbar></Navbar>
     <CarroselBanner :imgs_pc="imgs_pc" :imgs_mb="imgs_mb" :slides="false"></CarroselBanner>
-    <div class="cards row justify-content-center mt-3">
-        <CardWithIcon icone="img/icons/tratamento_corporal.png" titulo="TRATAMENTOS CORPORAIS" texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation">
-        </CardWithIcon>
+    <div id="___banner_principal">
+        <div class="container pt-5 c-white">
+            <div class="cards row justify-content-center mt-3">
+                <CardWithIcon icone="img/icons/tratamento_corporal.png" titulo="TRATAMENTOS CORPORAIS" texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation">
+                </CardWithIcon>
+                <CardWithIcon icone="img/icons/tratamento_facial.png" titulo="TRATAMENTOS FACIAIS" texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation">
+                </CardWithIcon>
+            </div>
+            <div class="text-center mt-5">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore itation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
+                <h1 class="mt-5 fw-600">TODOS OS NOSSOS TRATAMENTOS</h1>
+            </div>
+            <div class="cards row justify-content-center mt-3">
+                <CardWithImage :card_props="cards_data"></CardWithImage>
+            </div>
+        </div>
+    </div>
 
-        <CardWithIcon icone="img/icons/tratamento_facial.png" titulo="TRATAMENTOS FACIAIS" texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation">
-        </CardWithIcon>
-    </div>
-    <div class="text-center">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore itation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
-        <h1></h1>
-    </div>
+
+
     <Footer></Footer>
 </div>
