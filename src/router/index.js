@@ -6,6 +6,7 @@ import Quem_Somos from '../views/Quem_Somos/Quem_Somos.vue'
 import Depilacao_Masculina from '../views/Depilacao_Masculina/Depilacao_Masculina.vue'
 import Depilacao_Feminina from '../views/Depilacao_Feminina/Depilacao_Feminina.vue'
 import Estetica from '../views/Estetica/Estetica.vue'
+import Onde_Estamos from '../views/Onde_Estamos/Onde_Estamos.vue'
 
 Vue.use(VueRouter)
 
@@ -38,6 +39,11 @@ const routes = [{
         path: '/estetica',
         name: 'Estetica',
         component: Estetica
+    },
+    {
+        path: '/onde_estamos',
+        name: 'Onde Estamos',
+        component: Onde_Estamos
     },
 
 ]

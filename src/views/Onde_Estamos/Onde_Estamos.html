@@ -1,0 +1,38 @@
+<div id="main">
+    <Navbar></Navbar>
+    <CarroselBanner :imgs_pc="imgs_pc" :imgs_mb="imgs_mb" :slides="false"></CarroselBanner>
+    <div id="onde_estamos">
+        <div class="container pt-5 c-white">
+            <div class="row text-center align-self-center" style="place-content:center;">
+                <div class="col-lg-10">
+                    <div class="row text-center align-itens-center">
+                        <div class="col-lg-2 col-sm-12">
+                            <img class="img-fluid w-100 d-none d-md-block" src="../../assets/img/Onde_estamos/localizacao.png">
+                            <img class="img-fluid d-md-none d-sm-block" style="width: 50%;" src="../../assets/img/Onde_estamos/localizacao.png">
+                        </div>
+                        <div class="col-lg-10 col-sm-12 c-white text-left align-self-center d-none d-md-block">
+                            <h1 class="fw-700">TÍTULO PARA UM PEQUENO TEXTO</h1>
+                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore itation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="col-lg-10 col-sm-12 c-white text-center align-self-center d-md-none d-sm-block">
+                            <h1 class="fw-700">TÍTULO PARA UM PEQUENO TEXTO</h1>
+                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore itation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <Localizacao :infomarcoes="localizacoes"></Localizacao>
+        </div>
+        <div class="container text-center pt-5 pb-5">
+            <a class="c-pointer w-100 text-center d-flex " style="place-content: center;" href="#">
+                <img class="img-fluid d-none d-md-block" width="50%" src="../../assets/img/Onde_estamos/btn_vouncher.png">
+                <img class="img-fluid d-md-none d-sm-block" width="100%" src="../../assets/img/Onde_estamos/btn_vouncher.png">
+            </a>
+        </div>
+    </div>
+    <Footer></Footer>
+</div>

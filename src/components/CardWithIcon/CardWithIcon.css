@@ -1,6 +1,8 @@
-.card-col {
-    width: 20% !important;
-    flex: 0 0 20%
+@media (min-width: 600px) {
+    .card-col {
+        width: 20% !important;
+        flex: 0 0 20%
+    }
 }
 
 #card-title {

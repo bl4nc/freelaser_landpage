@@ -1,10 +1,12 @@
 <div class="cards row justify-content-center mt-3">
-    <div v-for="(data,i) in card_props" class="card col-lg-4 col-sm-12 col-md-12 text-center m-2">
-        <img :src="getImgUrl(data.img)" class="card-img-top">
+    <div v-for="(data,i) in card_props" style="border: .3rem solid #FF9011;" class="card col-lg-3 col-sm-12 col-md-12 text-center m-5 p-0 shadow">
+        <img :src="getImgUrl(data.img)" class="card-img-top w-100" style="border-radius: .7rem .7rem 0 0;">
+        <div class="text-center" style="border-radius: 0 0 .7rem .7rem; background-color: #FF9011; align-items: center; display: flex; align-self: center;  width: 100%;">
+            <h5 class="card-title text-center w-100 pt-3 c-white fw-600"> {{ data.titulo }} </h5>
+        </div>
         <div class="card-body">
-            <h5 class="card-title"> {{ data.titulo }} </h5>
-            <p class="card-text"> {{ data.texto }} </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <p class="card-text "> {{ data.texto }} </p>
+            <a href="#" class="btn btn-orange pl-3 pr-3 fw-600">Adicionar ao carrinho <img src="../../assets/img/icons/carrinho.svg" class="ml-1 " style="width: 1.3vw;"></a>
         </div>
     </div>
 </div>
