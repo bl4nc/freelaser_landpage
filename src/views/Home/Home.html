@@ -1,6 +1,6 @@
 <div id="main">
     <Navbar></Navbar>
-    <CarroselBanner :imgs_pc="imgs_pc" :imgs_mb="imgs_mb"></CarroselBanner>
+    <CarroselBanner :imgs_pc="imgs_pc" :imgs_mb="imgs_mb" :slides="true"></CarroselBanner>
     <div id="banner_02" class="_banner_02">
         <div class="container row align-items-center">
             <div class="col-lg-6 col-sm-12 text-center" id="textos">
@@ -24,34 +24,10 @@
                 <h3>ESCOLHA SER FREE!</h3>
                 <!-- <div class="card-deck"> -->
                 <div class="cards row justify-content-center mt-3">
-                    <div class="col-lg-3 card-col">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="../../assets/img/icons/maos.png" class="img-fluid mb-4">
-                                <h5 class="card-title">SOMOS 100% VOCÊ</h5>
-                                <p class="card-text">Aqui você encontra uma equipe altamente qualificada, treinada e apaixonada pelo que faz, 100% voltada ao seu bem-estar, satisfação e melhor experiência..</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 card-col">
-
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="../../assets/img/icons/depilacao.png" class="img-fluid mb-4">
-                                <h5 class="card-title">AS MELHORES TECNOLOGIAS</h5>
-                                <p class="card-text">Na Freelaser você sempre terá as mais avançadas e eficazes tecnologias da área de estética, visando sempre o melhor conforto e os melhores resultados para você.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 card-col">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="../../assets/img/icons/confiaca.png" class="img-fluid mb-4">
-                                <h5 class="card-title">AQUI, VOCÊ SEMPRE ESCOLHE</h5>
-                                <p class="card-text">Com a Freelaser, você sempre será protagonista e poderá cuidar do seu corpo e bem-estar, com preços muito justos e acessíveis, tudo no mesmo lugar, para que sua experiência seja única e duradoura!</p>
-                            </div>
-                        </div>
-                    </div>
+                    <CardWithIcon icone="img/icons/maos.png" titulo="SOMOS 100% VOCÊ" texto="Aqui você encontra uma equipe altamente qualificada, treinada e apaixonada pelo que faz, 100% voltada ao seu bem-estar, satisfação e melhor experiência.."> </CardWithIcon>
+                    <CardWithIcon icone="img/icons/depilacao.png" titulo="AS MELHORES TECNOLOGIAS" texto="Na Freelaser você sempre terá as mais avançadas e eficazes tecnologias da área de estética, visando sempre o melhor conforto e os melhores resultados para você."> </CardWithIcon>
+                    <CardWithIcon icone="img/icons/confiaca.png" titulo="AQUI, VOCÊ SEMPRE ESCOLHE" texto="Com a Freelaser, você sempre será protagonista e poderá cuidar do seu corpo e bem-estar, com preços muito justos e acessíveis, tudo no mesmo lugar, para que sua experiência seja única e duradoura!">
+                    </CardWithIcon>
                 </div>
                 <a class="btn btn-orange mt-2">CONHEÇA NOSSA HISTÓRIA</a>
                 <div class="mt-5" id="div_secnd">

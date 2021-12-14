@@ -1,0 +1,64 @@
+#__banner_02 {
+    background-image: url('../../assets/img/pg_depilacao_a_laser/bg.png');
+    color: white;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#__banner_02 #textos h1 {
+    text-align: center !important;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#__banner_02 #textos button {
+    font-size: .9rem;
+}
+
+#__banner_02 #texto-1 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+#__banner_02 h5 {
+    font-weight: 600;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+#textos-02 {
+    width: 50%;
+}
+
+#cards_bnc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-bonecas {
+    background: linear-gradient(324.84deg, #F7DBE8 0.94%, #FFFFFF 88.74%);
+    border-radius: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+
+.cards-bonecas img {
+    width: 60%;
+}
+
+#__banner_02 h3 {
+    font-weight: 700;
+}
+
+#__banner_02 h1 {
+    font-weight: 700;
+}

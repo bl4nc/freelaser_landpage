@@ -1,9 +1,9 @@
-<template src="./CarroselBanner.html"></template>
+<template src="./CardWithIcon.html"></template>
 
 <script>
 export default {
-  name: "CarroselBanner",
-  props: ["imgs_pc", "imgs_mb","slide"],
+  name: "CardWithIcon",
+  props: ["icone", "titulo","texto"],
   data: function () {
     return {
     };
@@ -17,5 +17,5 @@ export default {
 </script>
 
 <style scoped>
-@import url("./CarroselBanner.css");
+@import url("./CardWithIcon.css");
 </style>

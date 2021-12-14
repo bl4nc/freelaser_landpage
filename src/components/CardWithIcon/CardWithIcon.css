@@ -1,0 +1,25 @@
+.card-col {
+    width: 20% !important;
+    flex: 0 0 20%
+}
+
+#card-title {
+    font-weight: 600;
+}
+
+#card-text {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.card img {
+    width: 50%;
+}
+
+.card {
+    color: #990099 !important;
+    background: linear-gradient(165.49deg, #FFFDFE 11.09%, #F7DBE8 87.1%) !important;
+    border: solid 2px;
+    border-radius: 1rem;
+    min-height: 24rem;
+}

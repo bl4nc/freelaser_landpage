@@ -3,12 +3,10 @@
         <div class="row no-gutters">
             <div class="fixed-itens col-lg-12">
                 <form class="form-inline my-2 my-lg-0 d-none d-md-flex">
-                    <router-link class="navbar-brand" to="/">
+                    <router-link class="navbar-brand" to="./">
                         <img src="../../assets/img/logo.png" width="150px">
 
                     </router-link>
-                    <a href="./">
-                    </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -24,13 +22,13 @@
                     <a class="my-2 my-sm-0">
                         <img src="../../assets/img/icons/whatsapp.png" class="icon">
                     </a>
-                    <router-link to="/login" class="btn shadow" id="btn_area_cliente">
+                    <router-link to="./login" class="btn shadow" id="btn_area_cliente">
                         ÁREA DO CLIENTE
                     </router-link>
                 </form>
 
                 <form class="form-inline my-2 my-lg-0 d-md-none d-sm-block">
-                    <router-link class="navbar-brand" to="/">
+                    <router-link class="navbar-brand" to="./">
                         <img src="../../assets/img/logo.png" width="100px">
                     </router-link>
 
@@ -41,7 +39,7 @@
                     <a class="py-0">
                         <img src="../../assets/img/icons/whatsapp.png" class="icon">
                     </a>
-                    <router-link to="/login">
+                    <router-link to="./login">
                         <img src="../../assets/img/icons/user.png" class="icon">
                     </router-link>
 
@@ -57,18 +55,26 @@
             <div class="collapse navbar-collapse col-lg-12" id="navbarSupportedContent">
                 <div class="navbar-nav mr-auto mt-2 text-center">
                     <div class="nav-item">
-                        <a class="nav-link" href="./quem_somos">A FREELASER</a>
+                        <router-link class="nav-link" to="./quem_somos">
+                            A FREELASER
+                        </router-link>
                     </div>
                     <div class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false" id="depilacao_drop">DEPILAÇÃO A LASER</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="./depilacao_masculina">Depilação masculina</a>
+                            <router-link class="dropdown-item" to="./depilacao_masculina">
+                                Depilação masculina
+                            </router-link>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./depilacao_feminina">Depilação feminina</a>
+                            <router-link class="dropdown-item" to="./depilacao_feminina">
+                                Depilação feminina
+                            </router-link>
                         </div>
                     </div>
                     <div class="nav-item">
-                        <a class="nav-link" href="./tratamentos_esteticos">ESTÉTICA</a>
+                        <router-link class="nav-link" to="./estetica">
+                            ESTÉTICA
+                        </router-link>
                     </div>
                     <div class="nav-item">
                         <a class="nav-link" href="#">ONDE ESTAMOS</a>

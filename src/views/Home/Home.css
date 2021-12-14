@@ -43,31 +43,6 @@
     margin-top: 1.5rem;
 }
 
-#banner_03 .card-deck {
-    margin-top: 1.5rem;
-}
-
-#banner_03 .card img {
-    width: 50%;
-}
-
-#banner_03 .card {
-    color: #990099 !important;
-    background: linear-gradient(165.49deg, #FFFDFE 11.09%, #F7DBE8 87.1%) !important;
-    border: solid 2px;
-    border-radius: 1rem;
-    min-height: 24rem;
-}
-
-#banner_03 .card p {
-    font-size: .9rem;
-    font-weight: 500;
-}
-
-#banner_03 .card-title {
-    font-weight: 600;
-}
-
 #banner_03 #div_secnd h1 {
     font-size: 4rem;
     margin-top: 15rem;
@@ -94,11 +69,6 @@
 
 #banner_03 #div_secnd #sessoes span {
     font-size: 2.5rem;
-}
-
-.card-col {
-    width: 20% !important;
-    flex: 0 0 20%
 }
 
 #banner_03_mbl {
