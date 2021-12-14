@@ -34,7 +34,7 @@ jobs:
     - name: Sync files to hosting
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
-        server: ${{ FTP_HOST }}
-        username: ${{ FTP_USER }}
-        password: ${{ FTP_PASS }}
+        server: ${{ secrets.ftp_host }}
+        username: ${{ secrets.ftp_user }}
+        password: ${{ secrets.ftp_password }}
         server-dir: public_html/freelaser_v
