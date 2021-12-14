@@ -3,7 +3,6 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-  
 jobs:
   build:
     name: Build
@@ -20,11 +19,11 @@ jobs:
         with:
           name: dist
           path: dist
-deploy:
-  name: Deploy
-  needs: build
-  runs-on: ubuntu-latest
-  steps:
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
     - name: Checkout repository
       uses: actions/checkout@main
     - name: Download artifact
@@ -39,4 +38,3 @@ deploy:
         username: ${{ FTP_USER }}
         password: ${{ FTP_PASS }}
         server-dir: public_html/freelaser_v
-  
