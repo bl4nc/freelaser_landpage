@@ -1,9 +1,10 @@
-<div :v-if="card_props" :v-for="card_props" class="card col-lg-6 col-sm-12 col-md-12 text-center">
-    <img :src="getImgUrl(card_props.image)" class="card-img-top">
-    <div class="card-body">
-        <h5 class="card-title"> {{ card_props.titulo }} </h5>
-        <p class="card-text"> {{ card_props.texto }} </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+<div class="cards row justify-content-center mt-3">
+    <div v-for="(data,i) in card_props" class="card col-lg-4 col-sm-12 col-md-12 text-center m-2">
+        <img :src="getImgUrl(data.img)" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title"> {{ data.titulo }} </h5>
+            <p class="card-text"> {{ data.texto }} </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
     </div>
-    <p> {{ card_props }} </p>
 </div>
