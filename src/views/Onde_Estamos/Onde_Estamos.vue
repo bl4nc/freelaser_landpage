@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar/Navbar.vue";
 import Footer from "@/components/Footer/Footer.vue";
 import CarroselBanner from "@/components/CarroselBanner/CarroselBanner.vue";
 import Localizacao from "@/components/Localizacao/Localizacao.vue";
+import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon.vue";
 
 export default {
   name: "Onde_Estamos",
@@ -13,6 +14,7 @@ export default {
     Footer,
     CarroselBanner,
     Localizacao,
+    WhatsappIcon
   },
   data: function () {
     return {

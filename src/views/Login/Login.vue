@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar/Navbar.vue'
 import Footer from '@/components/Footer/Footer.vue'
 import LoginForm from '@/components/LoginForm/LoginForm.vue'
 import CadastroForm from '@/components/CadastroForm/CadastroForm.vue'
+import WhatsappIcon from '@/components/WhatsappIcon/WhatsappIcon.vue'
 
 export default {
   name: 'Login',
@@ -12,7 +13,8 @@ export default {
     Navbar,
     Footer,
     LoginForm,
-    CadastroForm
+    CadastroForm,
+    WhatsappIcon
   }
 }
 </script>

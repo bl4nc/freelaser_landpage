@@ -6,6 +6,7 @@ import Footer from "@/components/Footer/Footer.vue";
 import CarroselBanner from "@/components/CarroselBanner/CarroselBanner.vue";
 import CardWithIcon from "@/components/CardWithIcon/CardWithIcon.vue";
 import CardWithImage from "@/components/CardWithImage/CardWithImage.vue";
+import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon.vue";
 
 
 
@@ -16,7 +17,8 @@ export default {
     Footer,
     CarroselBanner,
     CardWithIcon,
-    CardWithImage
+    CardWithImage,
+    WhatsappIcon
   },
   data: function () {
     return {

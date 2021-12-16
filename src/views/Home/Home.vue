@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar/Navbar.vue";
 import Footer from "@/components/Footer/Footer.vue";
 import CarroselBanner from "@/components/CarroselBanner/CarroselBanner.vue";
 import CardWithIcon from "@/components/CardWithIcon/CardWithIcon.vue";
+import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon.vue";
 
 
 
@@ -17,7 +18,8 @@ export default {
     Navbar,
     Footer,
     CarroselBanner,
-    CardWithIcon
+    CardWithIcon,
+    WhatsappIcon
   },
   data: function () {
     return {

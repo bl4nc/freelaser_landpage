@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar/Navbar.vue";
 import Footer from "@/components/Footer/Footer.vue";
 import CarroselBanner from "@/components/CarroselBanner/CarroselBanner.vue";
 import CardCaracteristicas from "@/components/CardCaracteristicas/CardCaracteristicas.vue";
+import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon.vue";
 
 export default {
   name: "Depilacao_Feminina",
@@ -13,6 +14,7 @@ export default {
     Footer,
     CarroselBanner,
     CardCaracteristicas,
+    WhatsappIcon
   },
   data: function () {
     return {

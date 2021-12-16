@@ -3,12 +3,14 @@
 // @ is an alias to /src
 import Navbar from "@/components/Navbar/Navbar.vue";
 import Footer from "@/components/Footer/Footer.vue";
+import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon.vue";
 
 export default {
   name: "Quem_Somos",
   components: {
     Navbar,
     Footer,
+    WhatsappIcon,
   },
 };
 </script>
