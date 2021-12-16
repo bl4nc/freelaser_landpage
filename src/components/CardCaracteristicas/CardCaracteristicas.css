@@ -1,0 +1,13 @@
+#cards_bnc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-bonecas {
+    background: linear-gradient(324.84deg, #F7DBE8 0.94%, #FFFFFF 88.74%);
+    border-radius: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
