@@ -23,8 +23,8 @@ export default {
   },
   data: function () {
     return {
-      imgs_pc: ["img/banners_carrosel/banner_01.png","img/banners_carrosel/banner_home_02.jpg"],
-      imgs_mb: ["img/banner_top_mb_01.png","img/banners_carrosel/banner_home_02.jpg"],
+      imgs_pc: ["img/banners_carrosel/banner_01.png"],
+      imgs_mb: ["img/banner_top_mb_01.png"],
     };
   },
   methods: {
