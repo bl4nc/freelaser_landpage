@@ -32,20 +32,24 @@
                     <img class="img-fluid w-100" src="../../assets/img/Onde_estamos/whatsapp_ic.png">
                 </div>
                 <div class="col-10">
-                    <p class="c-orange m-0 p-0 fw-600">WHATSAPP</p>
-                    <p class="c-white m-0 p-0">{{ info.whatsapp }}</p>
+                    <a target="_blank" class="m-0 p-0 nav-link" :href="info.link_whats_web">
+                        <p class="c-orange m-0 p-0 fw-600">WHATSAPP</p>
+                        <p class="c-white m-0 p-0">{{ info.whatsapp }}</p>
+                    </a>
                 </div>
-                <div class="col-2 mb-5">
+                <div class="col-2 align-self-center">
                     <img class="img-fluid w-100" src="../../assets/img/Onde_estamos/localizacao_ic.png">
                 </div>
                 <div class="col-10">
-                    <p class="c-orange m-0 p-0 fw-600">LOCALIZAÇÃO</p>
-                    <p class="c-white m-0 p-0">{{ info.endereco }}</p>
+                    <a target="_blank" class="m-0 p-0 nav-link" :href="info.link_localizacao">
+                        <p class="c-orange m-0 p-0 fw-600">LOCALIZAÇÃO</p>
+                        <p class="c-white m-0 p-0">{{ info.endereco }}</p>
+                    </a>
+
                 </div>
             </div>
             <div class="row" v-else>
                 <div class="col-4"></div>
-
                 <div class="col-8 text-right">
                     <h4 class="fw-700 c-white">UNIDADE</h4>
                     <h2 class="fw-700 c-white" style="text-transform: uppercase;"> {{info.localizacao}}</h2>
@@ -65,15 +69,19 @@
                     <img class="img-fluid w-100" src="../../assets/img/Onde_estamos/telefone_ic.png">
                 </div>
                 <div class="col-10 text-right">
-                    <p class="c-orange m-0 p-0 fw-600">Horário de funcionamento</p>
-                    <p class="c-white m-0 p-0">{{ info.whatsapp }}</p>
+                    <a target="_blank" class="m-0 p-0 nav-link" :href="info.link_whats_web">
+                        <p class="c-orange m-0 p-0 fw-600">WHATSAPP</p>
+                        <p class="c-white m-0 p-0">{{ info.whatsapp }}</p>
+                    </a>
                 </div>
                 <div class="col-2 mb-5">
                     <img class="img-fluid w-100" src="../../assets/img/Onde_estamos/whatsapp_ic.png">
                 </div>
                 <div class="col-10 text-right">
-                    <p class="c-orange m-0 p-0 fw-600">Horário de funcionamento</p>
-                    <p class="c-white m-0 p-0">{{ info.localizacao }}</p>
+                    <a target="_blank" class="m-0 p-0 nav-link" :href="info.link_localizacao">
+                        <p class="c-orange m-0 p-0 fw-600">LOCALIZAÇÃO</p>
+                        <p class="c-white m-0 p-0">{{ info.endereco }}</p>
+                    </a>
                 </div>
                 <div class="col-2 mb-5">
                     <img class="img-fluid w-100" src="../../assets/img/Onde_estamos/localizacao_ic.png">
@@ -105,15 +113,19 @@
                     <img class="img-fluid " style="width: 15%;" src="../../assets/img/Onde_estamos/whatsapp_ic.png">
                 </div>
                 <div class="col-12">
-                    <p class="c-orange m-0 p-0 fw-600">WHATSAPP</p>
-                    <p class="c-white m-0 p-0">{{ info.whatsapp }}</p>
+                    <a target="_blank" class="m-0 p-0 nav-link" :href="info.link_whats_web">
+                        <p class="c-orange m-0 p-0 fw-600">WHATSAPP</p>
+                        <p class="c-white m-0 p-0">{{ info.whatsapp }}</p>
+                    </a>
                 </div>
                 <div class="col-12 mt-4 mb-2">
                     <img class="img-fluid " style="width: 15%;" src="../../assets/img/Onde_estamos/localizacao_ic.png">
                 </div>
                 <div class="col-12">
-                    <p class="c-orange m-0 p-0 fw-600">LOCALIZAÇÃO</p>
-                    <p class="c-white m-0 p-0">{{ info.endereco }}</p>
+                    <a target="_blank" class="m-0 p-0 nav-link" :href="info.link_localizacao">
+                        <p class="c-orange m-0 p-0 fw-600">LOCALIZAÇÃO</p>
+                        <p class="c-white m-0 p-0">{{ info.endereco }}</p>
+                    </a>
                 </div>
             </div>
         </div>

@@ -48,14 +48,15 @@ export default {
       const banner_03 = document.querySelector("._banner_03");
       const banner_04 = document.querySelector("._banner_04");
       const banner_05 = document.querySelector("._banner_05");
-      const banner_06 = document.querySelector("._banner_06");
+      // const banner_06 = document.querySelector("._banner_06");
       const banner_07 = document.querySelector("._banner_07");
       const elementos = [];
-      elementos.push(banner_03, banner_04, banner_05, banner_06, banner_07);
+      // elementos.push(banner_03, banner_04, banner_05, banner_06, banner_07);
+      elementos.push(banner_03, banner_04, banner_05, banner_07);
       animacao.setAnimationDown(banner_03, 100);
-      animacao.setAnimationLeft(banner_04, 100);
+      animacao.setAnimationUp(banner_04, 100);
       animacao.setAnimationRight(banner_05, 100);
-      animacao.setAnimationDown(banner_06, 100);
+      // animacao.setAnimationDown(banner_06, 100);
       animacao.setAnimationUp(banner_07, 100);
 
       function anima_scroll() {

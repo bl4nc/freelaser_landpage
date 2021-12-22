@@ -1,7 +1,7 @@
 <div id="main">
     <Navbar></Navbar>
     <CarroselBanner :imgs_pc="imgs_pc" :imgs_mb="imgs_mb" :slides="false"></CarroselBanner>
-    <div id="___banner_principal">
+    <!-- <div id="___banner_principal">
         <div class="container pt-5 c-white">
             <div class="cards row justify-content-center mt-3">
                 <CardWithIcon icone="img/icons/tratamento_corporal.png" titulo="TRATAMENTOS CORPORAIS" texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation">
@@ -22,8 +22,17 @@
             <h1 class="fw-700" style="font-size: 4vw;">3 SESSÕES GRÁTIS?</h1>
             <button class="btn btn-orange pl-5 pr-5 mt-3">QUERO SER FREE!</button>
         </div>
+    </div> -->
+    <div class="row no-gutters" id="___banner_principal">
+        <div class="col-7">
+            <img class="img-fluid w-100" src="../../assets/img/bg_left_web.png">
+        </div>
+        <div class="col-5 align-self-center">
+            <h1 style="font-weight: 600; color: #f17a00; font-size: 5vw;">EM BREVE</h1>
+            <h1 style="color: white; font-weight: 600; font-size: 4vw; margin-top: 1rem;">NOVIDADES<br>PARA VOCÊ!</h1>
+        </div>
     </div>
 
     <Footer></Footer>
-    <WhatsappIcon></WhatsappIcon>
+    <WhatsappIcon :link="`https://api.whatsapp.com/send?phone=557199700077`"></WhatsappIcon>
 </div>

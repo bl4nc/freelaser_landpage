@@ -1,10 +1,10 @@
-<div class="container">
+<div class="container-fluid w-100">
     <nav class="nav navbar navbar-expand-lg navbar-light justify-content-center">
         <div class="row no-gutters">
             <div class="fixed-itens col-lg-12">
                 <form class="form-inline my-2 my-lg-0 d-none d-md-flex">
                     <router-link class="navbar-brand" to="./">
-                        <img src="../../assets/img/logo.png" width="150px">
+                        <img src="../../assets/img/logo.png" width="200px">
 
                     </router-link>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,11 +15,11 @@
                         <img src="../../assets/img/icons/lupa.png" class="icon">
                     </a>
 
-                    <a class="my-2 my-sm-0">
+                    <!-- <a class="my-2 my-sm-0">
                         <img src="../../assets/img/icons/carrinho.png" class="icon">
-                    </a>
+                    </a> -->
 
-                    <a class="my-2 my-sm-0">
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=557199700077" class="my-2 my-sm-0 ml-5 mr-5 pointer">
                         <img src="../../assets/img/icons/whatsapp.png" class="icon">
                     </a>
                     <router-link to="./login" class="btn shadow" id="btn_area_cliente">
@@ -33,10 +33,10 @@
                     </router-link>
 
                     <input class="form-control w-40 d-none d-md-block">
-                    <a class="py-0">
+                    <!-- <a class="py-0">
                         <img src="../../assets/img/icons/carrinho.png" class="icon">
-                    </a>
-                    <a class="py-0">
+                    </a> -->
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=557199700077" class="py-0 pointer">
                         <img src="../../assets/img/icons/whatsapp.png" class="icon">
                     </a>
                     <router-link to="./login">
@@ -62,12 +62,12 @@
                     <div class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false" id="depilacao_drop">DEPILAÇÃO A LASER</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <router-link class="dropdown-item" to="./depilacao_masculina">
-                                Depilação masculina
+                            <router-link class="dropdown-item" to="./depilacao_feminina">
+                                Depilação Feminina
                             </router-link>
                             <div class="dropdown-divider"></div>
-                            <router-link class="dropdown-item" to="./depilacao_feminina">
-                                Depilação feminina
+                            <router-link class="dropdown-item" to="./depilacao_masculina">
+                                Depilação Masculina
                             </router-link>
                         </div>
                     </div>

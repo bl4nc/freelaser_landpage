@@ -3,6 +3,7 @@
 <script>
 export default {
   name: "WhatsappIcon",
+  props: ["link"],
 };
 </script>
 

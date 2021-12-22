@@ -20,8 +20,16 @@
 
 .card {
     color: #990099 !important;
-    background: linear-gradient(165.49deg, #FFFDFE 11.09%, #F7DBE8 87.1%) !important;
+    background: #fdebf4 !important;
+    /* background: linear-gradient(165.49deg, #FFFDFE 11.09%, #F7DBE8 87.1%) !important; */
     border: solid 2px;
     border-radius: 1rem;
-    min-height: 24rem;
+    min-height: 25rem;
+    transition: all .2s ease-in-out;
+}
+
+.card:hover {
+    background: rgb(255, 249, 252) !important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+    margin-top: -0.5rem !important;
 }

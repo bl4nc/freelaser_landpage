@@ -14,7 +14,7 @@ export default {
     Footer,
     CarroselBanner,
     Localizacao,
-    WhatsappIcon
+    WhatsappIcon,
   },
   data: function () {
     return {
@@ -32,10 +32,14 @@ export default {
           ],
           img: "img/Onde_estamos/galeria.png",
           localizacao: "Shopping Bela vista",
-          horario: "Das XXh as XXh",
-          telefone: "(71) 3333-3333",
-          whatsapp: "(71) 9.9999-9999",
-          endereco: "Endereço completo",
+          horario: `Segunda à sábado: Das 09:00h às 22:00h
+                    Domingos: Das 13:00h às 21:00h`,
+          telefone: "(71) 3039-0007",
+          whatsapp: "(71) 9.9970-0077",
+          link_whats_web: "https://api.whatsapp.com/send?phone=557199970-0077",
+          endereco:
+            "Al. Euvaldo Luz, 92 – Shopping Bela Vista, Piso L2 – Loja L 31.2 - Horto Bela Vista, Salvador/BA.",
+          link_localizacao: "https://goo.gl/maps/hPdZW7mGMkGCvq8e8",
         },
         {
           imgs_mb: [
@@ -48,10 +52,14 @@ export default {
           ],
           img: "img/Onde_estamos/galeria.png",
           localizacao: "Shopping Salvador",
-          horario: "Das XXh as XXh",
-          telefone: "(71) 3333-3333",
-          whatsapp: "(71) 9.9999-9999",
-          endereco: "Endereço completo",
+          horario: `Segunda à sábado: Das 09:00h às 22:00h
+                    Domingos: Das 13:00h às 21:00h`,
+          telefone: "(71) 3039-0007",
+          whatsapp: "(71) 9.9970-0077",
+          link_whats_web: "https://api.whatsapp.com/send?phone=5571999700077",
+          endereco:
+            "Avenida Tancredo Neves, 3133 – Salvador Shopping, 1° Piso - Loja 1153 - Caminho das Árvores, Salvador/BA.",
+          link_localizacao: "https://goo.gl/maps/88Y37zMySgshDhD17",
         },
       ],
     };

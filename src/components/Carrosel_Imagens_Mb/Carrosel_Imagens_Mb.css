@@ -1,5 +1,5 @@
 .texto-chamada {
     font-weight: 600;
-    border-bottom: .4rem solid;
+    /* border-bottom: .4rem solid; */
     width: fit-content;
 }
