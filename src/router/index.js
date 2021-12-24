@@ -7,6 +7,8 @@ import Depilacao_Masculina from '../views/Depilacao_Masculina/Depilacao_Masculin
 import Depilacao_Feminina from '../views/Depilacao_Feminina/Depilacao_Feminina.vue'
 import Estetica from '../views/Estetica/Estetica.vue'
 import Onde_Estamos from '../views/Onde_Estamos/Onde_Estamos.vue'
+import Lead from '../views/Lead/Lead.vue'
+import Faq from '../views/Faq/Faq.vue'
 
 Vue.use(VueRouter)
 
@@ -45,6 +47,18 @@ const routes = [{
         name: 'Onde Estamos',
         component: Onde_Estamos
     },
+    {
+        path: '/lead',
+        name: 'Lead',
+        component: Lead
+    },
+    {
+        path: '/faq',
+        name: 'Faq',
+        component: Faq
+    },
+
+
 
 ]
 

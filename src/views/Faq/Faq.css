@@ -1,0 +1,44 @@
+#_banner_02 #dizeres {
+    background: linear-gradient(90deg, #990099 5.1%, rgba(190, 43, 108, 0.930115) 69.58%);
+    /* display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem; */
+}
+
+#_banner_02 #textos {
+    color: white;
+}
+
+#_banner_02 #textos h1 {
+    text-align: center !important;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#_banner_02 #textos button {
+    font-size: .9rem;
+}
+
+#_banner_03 {
+    display: flex;
+    width: 100%;
+}
+
+#_banner_03 a {
+    cursor: pointer;
+}
+
+#_banner_03 #_btn_card img {
+    margin-top: 1rem;
+    width: 80%;
+}
+
+@media (min-width: 600px) {
+    #_banner_03 {
+        background-image: url("../../assets/img/pg_quem_somos/bg_vouncherf.png");
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+    }
+}

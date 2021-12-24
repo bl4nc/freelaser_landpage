@@ -32,6 +32,10 @@ body {
     text-transform: uppercase;
 }
 
+.c-none {
+    cursor: default !important;
+}
+
 .btn-orange {
     background-color: #FF9011;
     color: white;
