@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row" v-if="tipo === 'web'">
+        <div class="col-12" style="transition: all .1s ease-in-out;">
+            <img class="img-fluid" style="width: 70%;" :src="getImgUrl(caracteristicas[0].img)">
+        </div>
+        <div class="col-6" style="align-self: center;" v-for="(carc,i) in caracteristicas">
+            <button @click="mudar_imagem(carc.img)" @mouseover="mudar_imagem(carc.img)" class="btn btn-purple btn-block mt-2 mb-2"> {{ carc.caracteristica }} </button>
+        </div>
+    </div>
+    <div class="row mt-5" v-else>
+        <div class="col-12">
+            <h3 class="c-purple fw-700">ÁREA SELECIONADA</h3>
+        </div>
+        <div class="col-12">
+            <img class="img-fluid" :src="getImgUrl(caracteristicas[0].img)">
+        </div>
+        <div class="col-6" style="align-self: center;" v-for="(carc,i) in caracteristicas">
+            <button @click="mudar_imagem(carc.img)" @mouseover="mudar_imagem(carc.img)" class="btn btn-purple btn-block mt-2 mb-2"> {{ carc.caracteristica }} </button>
+        </div>
+    </div>
+</div>
