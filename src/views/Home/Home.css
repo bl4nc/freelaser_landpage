@@ -23,6 +23,21 @@
     font-size: .9rem;
 }
 
+#b3_pt_1 {
+    background-image: url("../../assets/img/banner_03_pt_1.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 30rem;
+}
+
+#b3_pt_1 h3 {
+    color: #990099;
+    font-weight: 700;
+}
+
+
+/* 
 #banner_03 {
     position: relative;
 }
@@ -33,7 +48,7 @@
 }
 
 #banner_03 #bg {
-    /* position: absolute; */
+   position: absolute; 
     z-index: 1;
 }
 
@@ -69,7 +84,7 @@
 
 #banner_03 #div_secnd #sessoes span {
     font-size: 2.5rem;
-}
+} */
 
 #banner_03_mbl {
     background-image: url("../../assets/img/bg_banner_03_01.png");
