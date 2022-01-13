@@ -7,8 +7,6 @@ import CarroselBanner from "@/components/CarroselBanner/CarroselBanner.vue";
 import CardWithIcon from "@/components/CardWithIcon/CardWithIcon.vue";
 import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon.vue";
 
-
-
 import Animate from "../../assets/js/Animate/Animate.js";
 const animacao = new Animate();
 
@@ -19,12 +17,26 @@ export default {
     Footer,
     CarroselBanner,
     CardWithIcon,
-    WhatsappIcon
+    WhatsappIcon,
   },
   data: function () {
     return {
-      imgs_pc: ["img/banners_carrosel/banner_01.png"],
-      imgs_mb: ["img/banner_top_mb_01.png"],
+      imgs_pc: [
+        "img/banners_carrosel/banner_01.png",
+        "img/banners_carrosel/banner_02.png",
+        "img/banners_carrosel/banner_03.png",
+        "img/banners_carrosel/banner_04.png",
+        "img/banners_carrosel/banner_05.png",
+        "img/banners_carrosel/banner_06.png",
+      ],
+      imgs_mb: [
+        "img/banner_top_mb_01.png",
+        "img/banners_carrosel/banner_02.png",
+        "img/banners_carrosel/banner_03.png",
+        "img/banners_carrosel/banner_04.png",
+        "img/banners_carrosel/banner_05.png",
+        "img/banners_carrosel/banner_06.png",
+      ],
     };
   },
   methods: {
