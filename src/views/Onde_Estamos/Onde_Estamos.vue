@@ -18,8 +18,8 @@ export default {
   },
   data: function () {
     return {
-      imgs_pc: ["img/Onde_estamos/Banner_web.png"],
-      imgs_mb: ["img/Onde_estamos/Banner_mb.png"],
+      imgs_pc: [{img:"img/Onde_estamos/Banner_web.png"}],
+      imgs_mb: [{img:"img/Onde_estamos/Banner_mb.png"}],
       localizacoes: [
         {
           imgs_mb: [

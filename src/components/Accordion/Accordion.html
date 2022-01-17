@@ -1,6 +1,6 @@
 <div class="tabs">
     <div v-for="(data,i) in accord_props" class="tab">
-        <input type="checkbox" :id="`${data.id}_${i}`">
+        <input type="radio" :id="`${data.id}_${i}`" name="check">
         <label class="tab-label mb-0" :for="`${data.id}_${i}`">{{ data.titulo }}</label>
         <div class="tab-content">
             <p v-for="texto in data.textos">

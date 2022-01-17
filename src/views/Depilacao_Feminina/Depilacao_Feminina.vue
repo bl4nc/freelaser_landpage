@@ -18,8 +18,8 @@ export default {
   },
   data: function () {
     return {
-      imgs_pc: ["img/pg_depilacao_a_laser/banner_dp_laser.png"],
-      imgs_mb: ["img/pg_depilacao_a_laser/banner_dp_laser.png"],
+      imgs_pc: [{img:"img/pg_depilacao_a_laser/banner_dp_laser.png"}],
+      imgs_mb: [{img:"img/pg_depilacao_a_laser/banner_dp_laser.png"}],
       card_data: [
         {
           img: "img/pg_depilacao_a_laser/boneca_frente.png",
@@ -33,7 +33,7 @@ export default {
               img: "img/pg_depilacao_a_laser/areas_f/frente/-_Coxas1.png",
             },
             {
-              caracteristica: "AREOLAS",
+              caracteristica: "ARÉOLAS",
               img: "img/pg_depilacao_a_laser/areas_f/frente/-_AREOLAS.png",
             },
             {
@@ -103,7 +103,7 @@ export default {
               img: "img/pg_depilacao_a_laser/areas_f/costas/-_AXILAS.png",
             },
             {
-              caracteristica: "GLUTEOS",
+              caracteristica: "GLÚTEOS",
               img: "img/pg_depilacao_a_laser/areas_f/costas/-_GLUTEOS.png",
             },
             {
@@ -135,7 +135,7 @@ export default {
               img: "img/pg_depilacao_a_laser/areas_f/costas/-_POSTERIORDECOXAS.png",
             },
             {
-              caracteristica: "PREGA GLUTEA",
+              caracteristica: "PREGA GLÚTEA",
               img: "img/pg_depilacao_a_laser/areas_f/costas/-_PREGAGLUTEA.png",
             },
           ],

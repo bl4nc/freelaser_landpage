@@ -25,15 +25,17 @@
                     <img class="img-fluid w-100" src="../../assets/img/Onde_estamos/telefone_ic.png">
                 </div>
                 <div class="col-10 ">
-                    <p class="c-orange m-0 p-0 fw-600">TELEFONE</p>
-                    <p class="c-white m-0 p-0">{{ info.telefone }}</p>
+                    <p class="c-orange m-0 p-0 fw-600">CENTRAL DE RELACIONAMENTO</p>
+                    <a :href="`tel:${info.telefone}`" style="text-decoration: none;">
+                        <p class="c-white m-0 p-0">{{ info.telefone }}</p>
+                    </a>
                 </div>
                 <div class="col-2 mb-5">
                     <img class="img-fluid w-100" src="../../assets/img/Onde_estamos/whatsapp_ic.png">
                 </div>
                 <div class="col-10">
                     <a target="_blank" class="m-0 p-0 nav-link" :href="info.link_whats_web">
-                        <p class="c-orange m-0 p-0 fw-600">WHATSAPP</p>
+                        <p class="c-orange m-0 p-0 fw-600">CENTRAL WHATSAPP</p>
                         <p class="c-white m-0 p-0">{{ info.whatsapp }}</p>
                     </a>
                 </div>
@@ -62,7 +64,7 @@
                     <img class="img-fluid w-100" src="../../assets/img/Onde_estamos/horario_ic.png">
                 </div>
                 <div class="col-10 text-right">
-                    <p class="c-orange m-0 p-0 fw-600">TELEFONE</p>
+                    <p class="c-orange m-0 p-0 fw-600">CENTRAL DE RELACIONAMENTO</p>
                     <p class="c-white m-0 p-0">{{ info.telefone }}</p>
                 </div>
                 <div class="col-2 mb-5">
@@ -70,7 +72,7 @@
                 </div>
                 <div class="col-10 text-right">
                     <a target="_blank" class="m-0 p-0 nav-link" :href="info.link_whats_web">
-                        <p class="c-orange m-0 p-0 fw-600">WHATSAPP</p>
+                        <p class="c-orange m-0 p-0 fw-600">CENTRAL WHATSAPP</p>
                         <p class="c-white m-0 p-0">{{ info.whatsapp }}</p>
                     </a>
                 </div>
@@ -107,7 +109,9 @@
                 </div>
                 <div class="col-12">
                     <p class="c-orange m-0 p-0 fw-600">TELEFONE</p>
-                    <p class="c-white m-0 p-0">{{ info.telefone }}</p>
+                    <a :href="`tel:${info.telefone}`">
+                        <p class="c-white m-0 p-0">{{ info.telefone }}</p>
+                    </a>
                 </div>
                 <div class="col-12 mt-4 mb-2">
                     <img class="img-fluid " style="width: 15%;" src="../../assets/img/Onde_estamos/whatsapp_ic.png">

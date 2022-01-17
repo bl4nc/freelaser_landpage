@@ -18,8 +18,8 @@ export default {
   },
   data: function () {
     return {
-      imgs_pc: ["img/pg_pgt_freq/banner_wb.png"],
-      imgs_mb: ["img/pg_pgt_freq/banner_wb.png"],
+      imgs_pc: [{img:"img/pg_pgt_freq/banner_wb.png"}],
+      imgs_mb: [{img:"img/pg_pgt_freq/banner_wb.png"}],
       duvidas_01: [
         {
           titulo: "Laser dói?",
@@ -36,10 +36,9 @@ export default {
           textos: [
             {
               texto:
-                "Utilizamos as 3 tecnologias mais modernas do mercado com as ponteiras resfriadas: Alexandrite, Diodoe NdYag.",
+                "Utilizamos as 3 tecnologias mais modernas do mercado com as ponteiras resfriadas: Alexandrite, Diodo e Nd-YAG.",
             },
           ],
-
           id: "d1",
         },
         {
@@ -145,7 +144,7 @@ export default {
           textos: [
             {
               texto:
-                "Sim! Exceto sobrancelhas, que requer precisam na depilação para manutenção do seu formato, a depilação a laser pode ser feita em todas as regiões do corpo.",
+                "Sim! Exceto sobrancelhas, que requerem precisão na depilação para manutenção do seu formato. A depilação a laser pode ser feita em todas as regiões do corpo.",
             },
           ],
           id: "d2",
@@ -246,7 +245,7 @@ export default {
             },
             {
               texto:
-                "✔️	Não utilizar na área tratada: cosméticos, desodorantes, hidratantes ou loções que contenham em sua formulação álcool, ácidos ou vitamina A o uso de creme com ácidos tópicos na região a ser tratada.",
+                "✔️	Não utilizar na área tratada: cosméticos, desodorantes, hidratantes ou loções que contenham em sua formulação álcool, ácidos ou vitamina A ou uso de creme com ácidos tópicos na região a ser tratada.",
             },
           ],
           id: "d2",
