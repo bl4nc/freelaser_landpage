@@ -57,13 +57,13 @@ const routes = [{
         name: 'Faq',
         component: Faq
     },
-
-
-
 ]
 
 const router = new VueRouter({
-    routes
+    routes,
+    scrollBehavior() {
+        document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
+    }
 })
 
 export default router

@@ -88,7 +88,12 @@ body {
     background-color: transparent;
     border-width: .15rem;
     border-color: white;
+    color: white !important;
     border-radius: 1rem;
+}
+
+.form-bg-transp:focus {
+    background-color: transparent !important;
 }
 
 .pointer {
