@@ -9,6 +9,8 @@ import Estetica from '../views/Estetica/Estetica.vue'
 import Onde_Estamos from '../views/Onde_Estamos/Onde_Estamos.vue'
 import Lead from '../views/Lead/Lead.vue'
 import Faq from '../views/Faq/Faq.vue'
+import Agendar from '../views/Agendar/Agendar.vue'
+import Area_Cliente from '../views/Area_Cliente/Area_Cliente.vue'
 
 Vue.use(VueRouter)
 
@@ -56,6 +58,15 @@ const routes = [{
         path: '/faq',
         name: 'Faq',
         component: Faq
+    },
+    {
+        path: '/agendar',
+        name: 'Agendar',
+        component: Agendar
+    }, {
+        path: '/area_cliente',
+        name: 'Area Cliente',
+        component: Area_Cliente
     },
 ]
 

@@ -84,6 +84,10 @@ body {
     font-weight: 500;
 }
 
+.c-pointer {
+    cursor: pointer;
+}
+
 .form-bg-transp {
     background-color: transparent;
     border-width: .15rem;

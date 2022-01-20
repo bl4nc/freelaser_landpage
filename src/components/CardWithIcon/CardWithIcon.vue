@@ -3,10 +3,9 @@
 <script>
 export default {
   name: "CardWithIcon",
-  props: ["icone", "titulo","texto"],
+  props: ["icone", "titulo", "texto"],
   data: function () {
-    return {
-    };
+    return {};
   },
   methods: {
     getImgUrl(pic) {

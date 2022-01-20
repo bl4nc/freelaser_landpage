@@ -1,6 +1,5 @@
 <div id="localizacoes">
     <div class="row pt-5 pb-5" v-for="(info,i) in infomarcoes">
-        <Carrosel_Imagens_Mb :imgs="info.imgs_mb" :pos="i"></Carrosel_Imagens_Mb>
         <div v-if="check_pos(i)" class="col-lg-4 align-self-center d-none d-md-block">
             <img class="img-fluid w-100" src="../../assets/img/Onde_estamos/f_esquerda.png">
         </div>
@@ -96,6 +95,9 @@
                 <div class="col-12">
                     <h4 class="fw-700 c-white">UNIDADE</h4>
                     <h2 class="fw-700 c-white" style="text-transform: uppercase;"> {{info.localizacao}}</h2>
+                </div>
+                <div class="col-12">
+                    <Carrosel_Imagens_Mb :imgs="info.imgs_mb" :pos="i"></Carrosel_Imagens_Mb>
                 </div>
                 <div class="col-12 mt-4 mb-2">
                     <img class="img-fluid " style="width: 15%;" src="../../assets/img/Onde_estamos/horario_ic.png">

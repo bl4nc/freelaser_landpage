@@ -1,0 +1,27 @@
+<div id="faq">
+    <Navbar></Navbar>
+    <CarroselBanner :imgs_pc="imgs_pc" :imgs_mb="imgs_mb" :slides="false"></CarroselBanner>
+    <div class="container pt-5 pb-5">
+        <div class="row" style="place-content: center;">
+            <div class="col-lg-10">
+                <div class="mt-4 mb-4 text-center">
+                    <h1 class="fw-700 c-purple">ESCOLHA SER LIVRE</h1>
+                    <h5 class="btn btn-purple c-none fw-700" style="padding-left: 6rem; padding-right: 6rem;">AGENDE SUA AVALIAÇÃO</h5>
+                </div>
+                <div class="mt-1 mb-1">
+                    <form class="text-center">
+                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="text" placeholder="Nome">
+                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="text" placeholder="Telefone">
+                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="text" placeholder="Unidade">
+                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="text" placeholder="Cidade">
+                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="email" placeholder="Email">
+                        <textarea placeholder="Mensagem" style="resize: none;border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" rows="5"></textarea>
+                        <button class="btn btn-orange c-none fw-700 mt-2 mb-2 pl-5 pr-5">AGENDAR</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <Footer></Footer>
+    <WhatsappIcon :link="`https://api.whatsapp.com/send?phone=557199700077`"></WhatsappIcon>
+</div>

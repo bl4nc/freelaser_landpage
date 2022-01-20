@@ -1,8 +1,11 @@
 <template src="./Navbar.html"></template>
 
 <script>
+
 export default {
   name: "Navbar",
+  components: {
+  },
 };
 </script>
 
