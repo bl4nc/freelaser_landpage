@@ -4,6 +4,11 @@ body {
     font-family: 'Jost', sans-serif;
 }
 
+body.swal2-shown>[aria-hidden="true"] {
+    transition: 0.1s filter;
+    filter: blur(10px);
+}
+
 .icon {
     height: 1.5rem;
 }
@@ -86,6 +91,10 @@ body {
 
 .c-pointer {
     cursor: pointer;
+}
+
+.select-orange option {
+    background-color: #E47C06;
 }
 
 .form-bg-transp {

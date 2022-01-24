@@ -2,17 +2,66 @@
 <script>
 // @ is an alias to /src
 import Navbar from "@/components/Navbar/Navbar.vue";
-import Footer from "@/components/Footer/Footer.vue";
+import Footer_02 from "@/components/Footer_02/Footer_02.vue";
 import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon.vue";
 import CardWithIcon from "@/components/CardWithIcon/CardWithIcon.vue";
+import axios from "../../plugins/axios";
 
 export default {
   name: "Lead",
   components: {
     Navbar,
-    Footer,
+    Footer_02,
     WhatsappIcon,
-    CardWithIcon
+    CardWithIcon,
+  },
+  data: function () {
+    return {
+      form: {
+        nome: null,
+        email: null,
+        celular: null,
+        unidade: null,
+        cidade: null,
+      },
+    };
+  },
+  methods: {
+    SendForm() {
+      const swal = this.$swal;
+      swal({
+        showConfirmButton: false,
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        title: "Enviando",
+        html: `
+        <div class="spinner-border mt-2 mb-2" style="width: 3rem; height: 3rem; overflow:hidden;" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        `,
+      });
+      axios
+        .post("http://localhost:8000/insertLead", this.form)
+        .then(function (resp) {
+          swal({
+            icon: "success",
+            showConfirmButton: true,
+            allowOutsideClick: false,
+            allowEscapeKey: false,
+            title: resp.data.message,
+          });
+        })
+        .catch(function (err) {
+          swal({
+            icon: "error",
+            showConfirmButton: true,
+            allowOutsideClick: false,
+            allowEscapeKey: false,
+            title: 'Erro',
+            text: err.response.data.message,
+          });
+        });
+    },
   },
 };
 </script>

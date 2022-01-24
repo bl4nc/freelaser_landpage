@@ -16,40 +16,60 @@
                 </div>
             </div>
         </div>
-        <div class="row no-gutters bg-purple pt-5">
-            <div class="bg-purple col-lg-6 col-sm-12 col-md-12 align-self-center">
+        <div class="bg-purple">
+            <div class="container pt-5 pt-5">
                 <h1 class="fw-700 c-white text-center">
-                    ESCOLHA SER LIVRE
+                    Sua depilação definitiva<br>com até
                 </h1>
-                <h1 class="fw-700 c-white text-center">VENHA VIVER UMA</h1>
-                <h1 class="fw-700 c-white text-center">
-                    EXPERIÊNCIA <span class="c-orange">FREE</span>LASER!
-                </h1>
-                <div class="mt-4" style="width: 80%; margin-left: 10%;">
-                    <label class="c-white mt-2">Nome</label>
-                    <input class="form-control form-bg-transp" type="text" id="nome">
-                    <label class="c-white mt-2">Celular</label>
-                    <input class="form-control form-bg-transp" type="text" id="telefone">
-                    <label class="c-white mt-2">Unidade</label>
-                    <select class="form-control form-bg-transp" style="color: white;">
-                            <option selected>Escolha uma opção!</option>
-                        </select>
-                    <label class="c-white mt-2">Cidade</label>
-                    <input class="form-control form-bg-transp" type="text" id="cidade">
-                    <label class="c-white mt-2">Email</label>
-                    <input class="form-control form-bg-transp" type="email" id="nome">
-                    <div class="text-center mt-3 mb-3">
-                        <button class="btn btn-orange  pl-4 pr-4">QUERO!</button>
+                <div class="text-center mt-3 mb-4">
+                    <img src="../../assets/img/80off.png" class="img-fluid">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col-lg-6 col-sm-12 col-md-12 align-self-center">
+                        <h1 class="fw-700 c-white text-center">
+                            ESCOLHA SER LIVRE
+                        </h1>
+                        <h1 class="fw-700 c-white text-center">VENHA VIVER UMA</h1>
+                        <h1 class="fw-700 c-white text-center">
+                            EXPERIÊNCIA <span class="c-orange">FREE</span>LASER!
+                        </h1>
+                        <div class="mt-4">
+                            <form v-on:submit.prevent="SendForm">
+                                <label class="c-white mt-2">Nome</label>
+                                <input required class="form-control form-bg-transp" type="text" id="nome" v-model="form.nome">
+                                <label class="c-white mt-2">Email</label>
+                                <input required class="form-control form-bg-transp" type="email" id="email" v-model="form.email">
+                                <label class="c-white mt-2">Celular</label>
+                                <input required class="form-control form-bg-transp" v-mask="'(##) ####-#####'" v-model="form.celular" type="text" id="telefone">
+                                <label class="c-white mt-2">Unidade</label>
+                                <select class="form-control form-bg-transp select-orange" style="color: white;" v-model="form.unidade">
+                                        <option selected disabled>Escolha uma opção!</option>
+                                        <option>Salvador Shopping.</option>
+                                        <option>Shopping Bela Vista</option>
+                                    </select>
+                                <label class="c-white mt-2">Cidade</label>
+                                <input required class="form-control form-bg-transp" type="text" id="cidade" v-model="form.cidade">
+                                <div class="text-center mt-3 mb-3">
+                                    <button class="btn btn-orange  pl-4 pr-4" type="submit">QUERO!</button>
+                                </div>
+                            </form>
+
+
+                        </div>
+                    </div>
+                    <div class="col-6 d-none d-md-block align-self-center">
+                        <img src="../../assets/img/pg_lead/mulher_lf.png" class="img-fluid w-100">
                     </div>
                 </div>
             </div>
-            <div class="col-6 d-none d-md-block align-self-center">
-                <img src="../../assets/img/pg_lead/mulher_lf.png" class="img-fluid w-100">
-            </div>
         </div>
+
+
         <div class="row no-gutters">
             <div class="col-12">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
                     <path fill="#990099" fill-opacity="1" d="M0,160L48,154.7C96,149,192,139,288,122.7C384,107,480,85,576,90.7C672,96,768,128,864,160C960,192,1056,224,1152,218.7C1248,213,1344,171,1392,149.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
                 </svg>
             </div>
@@ -102,7 +122,7 @@
         </div>
         <div class="row no-gutters">
             <div class="col-12">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
                     <path fill="#990099" fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,197.3C384,203,480,181,576,165.3C672,149,768,139,864,122.7C960,107,1056,85,1152,96C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
                 </svg>
             </div>
@@ -145,8 +165,8 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="row no-gutters">
-                                    <div class="col-1 mr-1">
-                                        <img src="../../assets/img/pg_lead/circle.svg" class="w-100">
+                                    <div class="col-1">
+                                        <img src="../../assets/img/pg_lead/circle.svg" style="width: 50%;">
                                     </div>
                                     <div class="col-10 c-white">
                                         <p style="padding: 0; margin: 0;" class="fw-600 c-white">
@@ -160,8 +180,8 @@
                             </div>
                             <div class="col-lg-12">
                                 <div class="row no-gutters">
-                                    <div class="col-1 mr-1">
-                                        <img src="../../assets/img/pg_lead/circle.svg" class="w-100">
+                                    <div class="col-1">
+                                        <img src="../../assets/img/pg_lead/circle.svg" style="width: 50%;">
                                     </div>
                                     <div class="col-10 c-white">
                                         <p style="padding: 0; margin: 0;" class="fw-600 c-white">
@@ -175,8 +195,8 @@
                             </div>
                             <div class="col-lg-12">
                                 <div class="row no-gutters">
-                                    <div class="col-1 mr-1">
-                                        <img src="../../assets/img/pg_lead/circle.svg" class="w-100">
+                                    <div class="col-1">
+                                        <img src="../../assets/img/pg_lead/circle.svg" style="width: 50%;">
                                     </div>
                                     <div class="col-10 c-white">
                                         <p style="padding: 0; margin: 0;" class="fw-600 c-white">
@@ -190,8 +210,8 @@
                             </div>
                             <div class="col-lg-12">
                                 <div class="row no-gutters">
-                                    <div class="col-1 mr-1">
-                                        <img src="../../assets/img/pg_lead/circle.svg" class="w-100">
+                                    <div class="col-1">
+                                        <img src="../../assets/img/pg_lead/circle.svg" style="width: 50%;">
                                     </div>
                                     <div class="col-10 c-white">
                                         <p style="padding: 0; margin: 0;" class="fw-600 c-white">
@@ -205,8 +225,8 @@
                             </div>
                             <div class="col-lg-12">
                                 <div class="row no-gutters">
-                                    <div class="col-1 mr-1">
-                                        <img src="../../assets/img/pg_lead/circle.svg" class="w-100">
+                                    <div class="col-1">
+                                        <img src="../../assets/img/pg_lead/circle.svg" style="width: 50%;">
                                     </div>
                                     <div class="col-10 c-white">
                                         <p style="padding: 0; margin: 0;" class="fw-600 c-white">
@@ -220,8 +240,8 @@
                             </div>
                             <div class="col-lg-12">
                                 <div class="row no-gutters">
-                                    <div class="col-1 mr-1">
-                                        <img src="../../assets/img/pg_lead/circle.svg" class="w-100">
+                                    <div class="col-1">
+                                        <img src="../../assets/img/pg_lead/circle.svg" style="width: 50%;">
                                     </div>
                                     <div class="col-10 c-white">
                                         <p style="padding: 0; margin: 0;" class="fw-600 c-white">
@@ -255,13 +275,13 @@
         </div>
         <div class="row no-gutters">
             <div class="col-12">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
                     <path fill="#990099" fill-opacity="1" d="M0,160L48,154.7C96,149,192,139,288,122.7C384,107,480,85,576,90.7C672,96,768,128,864,160C960,192,1056,224,1152,218.7C1248,213,1344,171,1392,149.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
                 </svg>
             </div>
         </div>
 
     </div>
-    <Footer></Footer>
+    <Footer_02></Footer_02>
     <WhatsappIcon :link="`https://api.whatsapp.com/send?phone=557199700077`"></WhatsappIcon>
 </div>

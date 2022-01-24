@@ -1,0 +1,23 @@
+footer {
+    color: #990099;
+}
+
+footer h6 {
+    font-weight: 700;
+}
+
+footer .text-muted {
+    color: #990099 !important;
+    font-weight: 500;
+}
+
+footer .borda-right {
+    border-right: solid 3px #FF9011;
+}
+
+footer #icons img {
+    width: 2rem;
+    margin-right: 1rem;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+}

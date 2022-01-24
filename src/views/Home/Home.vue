@@ -26,7 +26,7 @@ export default {
         { img: "img/banners_carrosel/banner_02.png" },
         { img: "img/banners_carrosel/banner_03.png" },
         { img: "img/banners_carrosel/banner_04.png" },
-        { img: "img/banners_carrosel/banner_05.png" },
+        { img: "img/banners_carrosel/banner_05.png", link: "agendar", interno: true },
         {
           img: "img/banners_carrosel/banner_06.png",
           link: "https://api.whatsapp.com/send?phone=557199700077",
