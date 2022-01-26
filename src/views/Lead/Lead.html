@@ -55,8 +55,6 @@
                                     <button class="btn btn-orange  pl-4 pr-4" type="submit">QUERO!</button>
                                 </div>
                             </form>
-
-
                         </div>
                     </div>
                     <div class="col-6 d-none d-md-block align-self-center">
@@ -140,6 +138,50 @@
                 </div>
             </div>
         </div>
+        <div class="bg-purple pt-5 pb-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                                <h2 class="fw-700 c-white text-center">
+                                    ESCOLHA SER LIVRE
+                                </h2>
+                                <h2 class="fw-700 c-white text-center">VENHA VIVER UMA</h2>
+                                <h1 class="fw-700 c-white text-center">
+                                    EXPERIÊNCIA <span class="c-orange">FREE</span>LASER!
+                                </h1>
+                            </div>
+                            <div class="col-lg-6">
+                                <form v-on:submit.prevent="SendForm">
+                                    <label class="c-white mt-2">Nome</label>
+                                    <input required class="form-control form-bg-transp" type="text" id="nome" v-model="form.nome">
+                                    <label class="c-white mt-2">Email</label>
+                                    <input required class="form-control form-bg-transp" type="email" id="email" v-model="form.email">
+                                    <label class="c-white mt-2">Celular</label>
+                                    <input required class="form-control form-bg-transp" v-mask="'(##) ####-#####'" v-model="form.celular" type="text" id="telefone">
+                                    <label class="c-white mt-2">Unidade</label>
+                                    <select class="form-control form-bg-transp select-orange" style="color: white;" v-model="form.unidade">
+                                            <option selected disabled>Escolha uma opção!</option>
+                                            <option>Salvador Shopping.</option>
+                                            <option>Shopping Bela Vista</option>
+                                        </select>
+                                    <label class="c-white mt-2">Cidade</label>
+                                    <input required class="form-control form-bg-transp" type="text" id="cidade" v-model="form.cidade">
+                                    <div class="text-center pt-3 pb-3">
+                                        <button class="btn btn-orange  pl-4 pr-4" type="submit">QUERO!</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
         <div class="row no-gutters pt-5 bg-purple">
             <div class="col-12 pb-5">
                 <h1 class="fw-700 c-white text-center">

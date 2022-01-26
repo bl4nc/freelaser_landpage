@@ -11,6 +11,7 @@ import Lead from '../views/Lead/Lead.vue'
 import Faq from '../views/Faq/Faq.vue'
 import Agendar from '../views/Agendar/Agendar.vue'
 import Area_Cliente from '../views/Area_Cliente/Area_Cliente.vue'
+import BaixarRelatorio from '../views/BaixarRelatorio/BaixarRelatorio.vue'
 
 Vue.use(VueRouter)
 
@@ -67,6 +68,11 @@ const routes = [{
         path: '/area_cliente',
         name: 'Area Cliente',
         component: Area_Cliente
+    },
+    {
+        path: '/tl_admin/:pass',
+        name: 'Admin',
+        component: BaixarRelatorio
     },
 ]
 

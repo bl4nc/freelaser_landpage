@@ -1,0 +1,25 @@
+<div id="main">
+    <Navbar></Navbar>
+    <div id="relatorios" class="pt-2 container">
+        <h5>Baixar relatório de leads</h5>
+        <hr>
+        <div class="mt-2 mb-2 ">
+            <form v-on:submit.prevent="baixarRelatorio">
+                <div class="row">
+                    <div class="col-6">
+                        <label> Data Inicial</label>
+                        <input class="form-control" type="date" id="ini" :max="hoje" required>
+                    </div>
+                    <div class="col-6">
+                        <label> Data Final</label>
+                        <input class="form-control" id="fim" :max="hoje" type="date" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-2 mb-2">Baixar relatório</button>
+            </form>
+
+        </div>
+    </div>
+    <Footer></Footer>
+    <WhatsappIcon :link="`https://api.whatsapp.com/send?phone=557199700077` "></WhatsappIcon>
+</div>

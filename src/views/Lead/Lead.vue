@@ -41,7 +41,7 @@ export default {
         `,
       });
       axios
-        .post("http://localhost:8000/insertLead", this.form)
+        .post("../teste/api/insertLead", this.form)
         .then(function (resp) {
           swal({
             icon: "success",
@@ -52,14 +52,7 @@ export default {
           });
         })
         .catch(function (err) {
-          swal({
-            icon: "error",
-            showConfirmButton: true,
-            allowOutsideClick: false,
-            allowEscapeKey: false,
-            title: 'Erro',
-            text: err.response.data.message,
-          });
+          console.log(err);
         });
     },
   },
