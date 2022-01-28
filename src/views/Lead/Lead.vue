@@ -4,13 +4,13 @@
 import Footer_02 from "@/components/Footer_02/Footer_02.vue";
 import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon.vue";
 import CardWithIcon from "@/components/CardWithIcon/CardWithIcon.vue";
-import Navbar_02 from "@/components/Navbar_02/Navbar_02.vue";
+import Navbar_03 from "@/components/Navbar_03/Navbar_03.vue";
 import axios from "../../plugins/axios";
 
 export default {
   name: "Lead",
   components: {
-    Navbar_02,
+    Navbar_03,
     Footer_02,
     WhatsappIcon,
     CardWithIcon,
