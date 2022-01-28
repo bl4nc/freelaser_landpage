@@ -12,6 +12,7 @@ import Faq from '../views/Faq/Faq.vue'
 import Agendar from '../views/Agendar/Agendar.vue'
 import Area_Cliente from '../views/Area_Cliente/Area_Cliente.vue'
 import BaixarRelatorio from '../views/BaixarRelatorio/BaixarRelatorio.vue'
+import Agradecimento from '../views/Agradecimento/Agradecimento.vue'
 
 Vue.use(VueRouter)
 
@@ -73,6 +74,11 @@ const routes = [{
         path: '/tl_admin/:pass',
         name: 'Admin',
         component: BaixarRelatorio
+    },
+    {
+        path: '/agradecimento',
+        name: 'Agradecimento',
+        component: Agradecimento
     },
 ]
 
