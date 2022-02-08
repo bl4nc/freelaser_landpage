@@ -9,14 +9,18 @@
                     <h5 class="btn btn-purple c-none fw-700" style="padding-left: 6rem; padding-right: 6rem;">AGENDE SUA AVALIAÇÃO</h5>
                 </div>
                 <div class="mt-1 mb-1">
-                    <form class="text-center">
-                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="text" placeholder="Nome">
-                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="text" placeholder="Telefone">
-                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="text" placeholder="Unidade">
-                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="text" placeholder="Cidade">
-                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="email" placeholder="Email">
+                    <form v-on:submit.prevent="SendForm">
+                        <input name="nome" id="nome" v-model="form.nome" style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="text" placeholder="Nome">
+                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" name="celular" v-mask="'(##) ####-#####'" v-model="form.celular" type="text" id="telefone" placeholder="Celular">
+                        <select style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" name="unidade" v-model="form.unidade">
+                            <option disabled selected>Escolha uma opção!</option>
+                            <option>Salvador Shopping</option>
+                            <option>Shopping Bela Vista</option>
+                        </select>
+                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" name="cidade" type="text" id="cidade" v-model="form.cidade" placeholder="Cidade">
+                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="email" name="email" id="email" v-model="form.email" placeholder="Email">
                         <textarea placeholder="Mensagem" style="resize: none;border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" rows="5"></textarea>
-                        <button class="btn btn-orange c-none fw-700 mt-2 mb-2 pl-5 pr-5">AGENDAR</button>
+                        <button class="btn btn-orange c-none fw-700 mt-2 mb-2 pl-5 pr-5" type="submit">AGENDAR</button>
                     </form>
                 </div>
             </div>
