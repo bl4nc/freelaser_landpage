@@ -28,6 +28,7 @@ export default {
   },
   methods: {
     SendForm() {
+      const router = this.$router;
       const swal = this.$swal;
       swal({
         showConfirmButton: false,
@@ -50,9 +51,16 @@ export default {
             allowEscapeKey: false,
             title: resp.data.message,
           });
+           router.push("/agradecimento");
         })
         .catch(function (err) {
-          console.log(err);
+          swal({
+            icon: "error",
+            showConfirmButton: true,
+            allowOutsideClick: false,
+            allowEscapeKey: false,
+            title: err,
+          });
         });
     },
   },

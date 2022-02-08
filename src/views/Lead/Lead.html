@@ -50,19 +50,19 @@
                         <div class="mt-4">
                             <form v-on:submit.prevent="SendForm">
                                 <label class="c-white mt-2">Nome</label>
-                                <input required class="form-control form-bg-transp" type="text" id="nome" v-model="form.nome">
+                                <input required class="form-control form-bg-transp" type="text" name="nome" id="nome" v-model="form.nome">
                                 <label class="c-white mt-2">Email</label>
-                                <input required class="form-control form-bg-transp" type="email" id="email" v-model="form.email">
+                                <input required class="form-control form-bg-transp" type="email" name="email" id="email" v-model="form.email">
                                 <label class="c-white mt-2">Celular</label>
-                                <input required class="form-control form-bg-transp" v-mask="'(##) ####-#####'" v-model="form.celular" type="text" id="telefone">
+                                <input required class="form-control form-bg-transp" name="celular" v-mask="'(##) ####-#####'" v-model="form.celular" type="text" id="telefone">
                                 <label class="c-white mt-2">Unidade</label>
-                                <select class="form-control form-bg-transp select-orange" style="color: white;" v-model="form.unidade">
+                                <select class="form-control form-bg-transp select-orange" name="unidade" style="color: white;" v-model="form.unidade">
                                         <option selected disabled>Escolha uma opção!</option>
                                         <option>Salvador Shopping</option>
                                         <option>Shopping Bela Vista</option>
                                     </select>
                                 <label class="c-white mt-2">Cidade</label>
-                                <input required class="form-control form-bg-transp" type="text" id="cidade" v-model="form.cidade">
+                                <input required class="form-control form-bg-transp" name="cidade" type="text" id="cidade" v-model="form.cidade">
                                 <div class="text-center mt-3 mb-3">
                                     <button class="btn btn-orange  pl-4 pr-4" type="submit">QUERO!</button>
                                 </div>
@@ -303,19 +303,19 @@
                             <div class="col-lg-6">
                                 <form v-on:submit.prevent="SendForm">
                                     <label class="c-white mt-2">Nome</label>
-                                    <input required class="form-control form-bg-transp" type="text" id="nome" v-model="form.nome">
+                                    <input required class="form-control form-bg-transp" type="text" name="nome" id="nome" v-model="form.nome">
                                     <label class="c-white mt-2">Email</label>
-                                    <input required class="form-control form-bg-transp" type="email" id="email" v-model="form.email">
+                                    <input required class="form-control form-bg-transp" type="email" name="email" id="email" v-model="form.email">
                                     <label class="c-white mt-2">Celular</label>
-                                    <input required class="form-control form-bg-transp" v-mask="'(##) ####-#####'" v-model="form.celular" type="text" id="telefone">
+                                    <input required class="form-control form-bg-transp" name="celular" v-mask="'(##) ####-#####'" v-model="form.celular" type="text" id="telefone">
                                     <label class="c-white mt-2">Unidade</label>
-                                    <select class="form-control form-bg-transp select-orange" style="color: white;" v-model="form.unidade">
+                                    <select class="form-control form-bg-transp select-orange" name="unidade" style="color: white;" v-model="form.unidade">
                                             <option selected disabled>Escolha uma opção!</option>
                                             <option>Salvador Shopping</option>
                                             <option>Shopping Bela Vista</option>
                                         </select>
                                     <label class="c-white mt-2">Cidade</label>
-                                    <input required class="form-control form-bg-transp" type="text" id="cidade" v-model="form.cidade">
+                                    <input required class="form-control form-bg-transp" name="cidade" type="text" id="cidade" v-model="form.cidade">
                                     <div class="text-center pt-3 pb-3">
                                         <button class="btn btn-orange  pl-4 pr-4" type="submit">QUERO!</button>
                                     </div>
