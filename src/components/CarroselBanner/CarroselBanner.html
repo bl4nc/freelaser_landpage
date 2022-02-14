@@ -1,7 +1,7 @@
 <div class="banners">
     <div id="banners" class="carousel slide d-none d-md-block" data-ride="carousel">
         <div class="carousel-inner">
-            <div v-for="(img,i) in imgs_pc" :class="{active: i == 0}" class="carousel-item">
+            <div v-for="(img,i) in imgs_pc" :class="{active: i == 0}" class="carousel-item " data-interval="3000">
                 <a v-if="img.link" :href="img.link" target="_blank">
                     <img :src="getImgUrl(img.img)" class="d-block w-100">
                 </a>
@@ -22,7 +22,7 @@
 
     <div id="banners_01_mb" class="carousel slide d-sm-block d-md-none" data-ride="carousel">
         <div class="carousel-inner">
-            <div v-for="(img,i) in imgs_mb" :class="{active: i == 0}" class="carousel-item">
+            <div v-for="(img,i) in imgs_mb" :class="{active: i == 0}" class="carousel-item" data-interval="3000">
                 <a v-if="img.link" :href="img.link" target="_blank">
                     <img :src="getImgUrl(img.img)" class="d-block w-100">
                 </a>
