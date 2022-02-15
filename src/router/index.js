@@ -9,6 +9,7 @@ import Estetica from '../views/Estetica/Estetica.vue'
 import Onde_Estamos from '../views/Onde_Estamos/Onde_Estamos.vue'
 import Lead from '../views/Lead/Lead.vue'
 import Faq from '../views/Faq/Faq.vue'
+import Fale_conosco from '../views/Fale_conosco/Fale_conosco.vue'
 import Agendar from '../views/Agendar/Agendar.vue'
 import Area_Cliente from '../views/Area_Cliente/Area_Cliente.vue'
 import BaixarRelatorio from '../views/BaixarRelatorio/BaixarRelatorio.vue'
@@ -17,6 +18,11 @@ import Agradecimento from '../views/Agradecimento/Agradecimento.vue'
 Vue.use(VueRouter)
 
 const routes = [{
+        path: '*',
+        name: 'Home',
+        component: Home
+    },
+    {
         path: '/',
         name: 'Home',
         component: Home
@@ -30,6 +36,11 @@ const routes = [{
         path: '/quem_somos',
         name: 'Quem somos',
         component: Quem_Somos
+    },
+    {
+        path: '/fale_conosco',
+        name: 'Fale conosco',
+        component: Fale_conosco
     },
     {
         path: '/depilacao_masculina',

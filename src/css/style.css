@@ -9,6 +9,10 @@ body.swal2-shown>[aria-hidden="true"] {
     filter: blur(10px);
 }
 
+.r-none {
+    resize: none;
+}
+
 .icon {
     height: 1.5rem;
 }

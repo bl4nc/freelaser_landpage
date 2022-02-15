@@ -25,6 +25,5 @@ export default {
 };
 </script>
 
-<style scoped>
-@import url("./Agendar.css");
+<style scoped src="./Agendar.css">
 </style>

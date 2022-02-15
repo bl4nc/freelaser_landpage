@@ -21,22 +21,34 @@ export default {
   },
   data: function () {
     return {
+      
       imgs_pc: [
         { img: "img/banners_carrosel/banner_01.png" },
         { img: "img/banners_carrosel/banner_02.png" },
         { img: "img/banners_carrosel/banner_03.png" },
-        { img: "img/banners_carrosel/banner_04.png" },
-        { img: "img/banners_carrosel/banner_05.png", link: "agendar", interno: true },
+        {
+          img: "img/banners_carrosel/banner_04.png",
+          link: "https://api.whatsapp.com/send?phone=557199700077",
+        },
+        {
+          img: "img/banners_carrosel/banner_05.png",
+          link: "agendar",
+          interno: true,
+        },
         {
           img: "img/banners_carrosel/banner_06.png",
           link: "https://api.whatsapp.com/send?phone=557199700077",
         },
       ],
+
       imgs_mb: [
         { img: "img/banner_top_mb_01.png" },
         { img: "img/banners_carrosel/banner_02.png" },
         { img: "img/banners_carrosel/banner_03.png" },
-        { img: "img/banners_carrosel/banner_04.png" },
+        {
+          img: "img/banners_carrosel/banner_04.png",
+          link: "https://api.whatsapp.com/send?phone=557199700077",
+        },
         { img: "img/banners_carrosel/banner_05.png" },
         {
           img: "img/banners_carrosel/banner_06.png",
