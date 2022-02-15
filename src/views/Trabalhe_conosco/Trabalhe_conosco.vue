@@ -3,6 +3,7 @@
 // @ is an alias to /src
 import Navbar from "@/components/Navbar/Navbar.vue";
 import Footer from "@/components/Footer/Footer.vue";
+import FileInput from "@/components/FileInput/FileInput.vue";
 import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon.vue";
 import CarroselBanner from "@/components/CarroselBanner/CarroselBanner.vue";
 import Accordion from "@/components/Accordion/Accordion.vue";
@@ -12,6 +13,7 @@ export default {
   name: "Trabalhe_conosco",
   components: {
     Navbar,
+    FileInput,
     Footer,
     WhatsappIcon,
     CarroselBanner,
@@ -23,51 +25,87 @@ export default {
         nome: null,
         email: null,
         celular: null,
-        mensagem: "Digite a sua mensagem aqui.",
-        assunto: null,
+        vaga: null,
       },
     };
   },
 
   methods: {
-    setAssunto(el) {
-      this.form.assunto = (el.target.value)
-    },
-    SendForm() {
+    uploadFile() {
       const swal = this.$swal;
-      swal({
-        showConfirmButton: false,
-        allowOutsideClick: false,
-        allowEscapeKey: false,
-        title: "Enviando",
-        html: `
-        <div class="spinner-border mt-2 mb-2" style="width: 3rem; height: 3rem; overflow:hidden;" role="status">
-          <span class="sr-only">Loading...</span>
-        </div>
-        `,
-      });
-      axios
-        .post("../teste/api/insertFaleConosco", this.form)
-        // .post("http://localhost:9000/insertFaleConosco", this.form)
-        .then(function (resp) {
-          swal({
-            icon: "success",
-            showConfirmButton: true,
-            allowOutsideClick: false,
-            allowEscapeKey: false,
-            title: resp.data.message,
-          }).then(()=>{
-            location.reload()
-          });
+      swal
+        .fire({
+          icon: "info",
+          title: "Confirmação de segurança",
+          text: "Você tem certeza?",
+          allowEscapeKey: false,
+          allowOutsideClick: false,
+          showCancelButton: true,
+          confirmButtonText: "Confirmar",
+          cancelButtonText: "Cancelar",
         })
-        .catch(function (err) {
-          swal({
-            icon: "error",
-            showConfirmButton: true,
-            allowOutsideClick: false,
-            allowEscapeKey: false,
-            title: err,
-          });
+        .then((result) => {
+          if (result.isConfirmed) {
+            swal({
+              showConfirmButton: false,
+              allowOutsideClick: false,
+              allowEscapeKey: false,
+              title: "Enviando",
+              html: `
+              <div class="spinner-border mt-2 mb-2" style="width: 3rem; height: 3rem; overflow:hidden;" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+              `,
+            });
+            let formData = new FormData();
+            let arquivo = document.getElementById(`upload_file`);
+            formData.append("arq", arquivo.files[0]);
+            axios
+              .post(`${this.api}/UploadBase`, [formData, this.form], {
+                // onUploadProgress: function (progressEvent) {
+                //   this.uploadPercentage = parseInt(
+                //     Math.round(
+                //       (progressEvent.loaded / progressEvent.total) * 100
+                //     )
+                //   );
+                // }.bind(this),
+              })
+              .then(function (resp) {
+                if (resp.data.success) {
+                  swal({
+                    title: `<div>
+                                <h4>Dados enviados com sucesso!</h4>
+                                  <img src='../../assets/img/success_gif.gif' width="100%">
+                              </div>`,
+                    allowEscapeKey: false,
+                    allowOutsideClick: false,
+                  }).then(() => {
+                    location.reload();
+                  });
+                } else {
+                  swal.fire({
+                      icon: "error",
+                      title: "Erro para enviar base",
+                      text: resp.data.message,
+                    })
+                    .then(() => {
+                      location.reload();
+                    });
+                }
+              })
+              .catch(function (err) {
+                
+                swal.fire({
+                    icon: "error",
+                    title: "Erro na API",
+                    text: err,
+                  })
+                  .then((result) => {
+                    console.log(result);
+                    location.reload();
+                  });
+              });
+          }
         });
     },
   },
