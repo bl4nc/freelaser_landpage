@@ -26,12 +26,13 @@ export default {
         email: null,
         celular: null,
         vaga: null,
+        anexo: null,
       },
     };
   },
 
   methods: {
-    uploadFile() {
+    uploadFile(form) {
       const swal = this.$swal;
       swal
         .fire({
@@ -57,19 +58,20 @@ export default {
               </div>
               `,
             });
+            console.log(form)
             let formData = new FormData();
-            let arquivo = document.getElementById(`upload_file`);
+            let arquivo = form.target[4];
+            console.log(arquivo.files[0])
             formData.append("arq", arquivo.files[0]);
+            const send = {
+              arquivo: formData,
+              form: this.form,
+            };
+            console.log(formData)
             axios
-              .post(`${this.api}/UploadBase`, [formData, this.form], {
-                // onUploadProgress: function (progressEvent) {
-                //   this.uploadPercentage = parseInt(
-                //     Math.round(
-                //       (progressEvent.loaded / progressEvent.total) * 100
-                //     )
-                //   );
-                // }.bind(this),
-              })
+              .post("http://localhost:9000/enviarDadosTrabalheConosco", send)
+
+              // .post(`${this.api}/enviarDadosTrabalheConosco`, send, {})
               .then(function (resp) {
                 if (resp.data.success) {
                   swal({
@@ -83,19 +85,20 @@ export default {
                     location.reload();
                   });
                 } else {
-                  swal.fire({
+                  swal
+                    .fire({
                       icon: "error",
                       title: "Erro para enviar base",
                       text: resp.data.message,
                     })
                     .then(() => {
-                      location.reload();
+                      // location.reload();0
                     });
                 }
               })
               .catch(function (err) {
-                
-                swal.fire({
+                swal
+                  .fire({
                     icon: "error",
                     title: "Erro na API",
                     text: err,

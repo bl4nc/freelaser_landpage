@@ -38,6 +38,10 @@ body {
     border-radius: .7rem;
 }
 
+.c-red {
+    color: red !important;
+}
+
 .btn-orange:hover {
     background-color: #e47c06 !important;
     color: white;

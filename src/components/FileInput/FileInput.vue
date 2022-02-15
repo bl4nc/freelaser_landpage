@@ -3,6 +3,7 @@
 <script>
 export default {
   name: "FileInput",
+
   methods: {
     higthlight_on() {
       document
