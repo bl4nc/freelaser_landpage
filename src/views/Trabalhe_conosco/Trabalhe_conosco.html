@@ -1,0 +1,43 @@
+<div id="fale_conosco">
+    <Navbar></Navbar>
+    <div class="main">
+        <div class="container">
+            <form id="formulario" v-on:submit.prevent="SendForm">
+                <div class="form-itens">
+                    <div class="titulo text-center">
+                        <h5 class="p-2 text-white">FALE COM A FREE</h5>
+                    </div>
+                    <div class="itens">
+                        <input required class="form-control c-purple mb-2" name="Nome" v-model="form.nome" type="text" placeholder="Nome">
+                        <input required class="form-control c-purple mb-2" type="email" placeholder="Email" name="Email" v-model="form.email">
+                        <input required class="form-control c-purple mb-2 " v-mask="'(##) ####-#####'" v-model="form.celular" name="Celular" type="text" placeholder="Celular">
+                        <select id="assunto" v-on:change="setAssunto($event)" required class="form-control c-purple mb-2 " name="assunto" style="color: white;">
+                            <option selected disabled>Escolha uma opção!</option>
+                            <option value="Duvidas">Duvidas</option>
+                            <option value="Sugestões">Sugestões</option>
+                            <option value="Reclamações">Reclamações</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                        <textarea required class="form-control c-purple r-none" v-model="form.mensagem" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="botao mb-2 text-center d-flex" style="place-content: center;">
+                    <button class="btn btn-orange mt-4 pl-5 pr-5 btn-block pt-2 pb-2">
+                        <strong>
+                        ENVIAR
+                    </strong>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send ml-2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                </div>
+
+
+
+
+
+            </form>
+
+        </div>
+    </div>
+    <Footer></Footer>
+    <WhatsappIcon :link="`https://api.whatsapp.com/send?phone=557199700077`"></WhatsappIcon>
+</div>

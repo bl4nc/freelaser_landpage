@@ -14,13 +14,12 @@ export default {
     Footer,
     CarroselBanner,
     CardCaracteristicas,
-    WhatsappIcon
-    
+    WhatsappIcon,
   },
   data: function () {
     return {
-      imgs_pc: ["img/pg_depilacao_a_laser/banner_dp_laser_1.png"],
-      imgs_mb: ["img/pg_depilacao_a_laser/banner_dp_laser_1.png"],
+      imgs_pc: [{ img: "img/pg_depilacao_a_laser/dpMasc.png" }],
+      imgs_mb: [{ img: "img/pg_depilacao_a_laser/dpMasc.png" }],
       card_data: [
         {
           img: "img/pg_depilacao_a_laser/boneco_frente.png",
@@ -136,7 +135,7 @@ export default {
         },
         {
           img: "img/pg_depilacao_a_laser/boneco_rosto.png",
-         caracteristicas: [
+          caracteristicas: [
             {
               caracteristica: "BIGODE",
               img: "img/pg_depilacao_a_laser/areas_m/cabeca/BIGODE.png",

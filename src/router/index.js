@@ -10,6 +10,7 @@ import Onde_Estamos from '../views/Onde_Estamos/Onde_Estamos.vue'
 import Lead from '../views/Lead/Lead.vue'
 import Faq from '../views/Faq/Faq.vue'
 import Fale_conosco from '../views/Fale_conosco/Fale_conosco.vue'
+import Trabalhe_conosco from '../views/Trabalhe_conosco/Trabalhe_conosco.vue'
 import Agendar from '../views/Agendar/Agendar.vue'
 import Area_Cliente from '../views/Area_Cliente/Area_Cliente.vue'
 import BaixarRelatorio from '../views/BaixarRelatorio/BaixarRelatorio.vue'
@@ -41,6 +42,11 @@ const routes = [{
         path: '/fale_conosco',
         name: 'Fale conosco',
         component: Fale_conosco
+    },
+    {
+        path: '/trabalhe_conosco',
+        name: 'Trabalhe conosco',
+        component: Trabalhe_conosco
     },
     {
         path: '/depilacao_masculina',

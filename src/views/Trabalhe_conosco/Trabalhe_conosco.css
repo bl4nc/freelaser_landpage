@@ -1,0 +1,63 @@
+@media (max-width: 600px) {
+    #fale_conosco .main {
+        background-image: url("../../assets/img/Trabalhe_conosco/bg_mb.png") !important;
+        background-position: top !important;
+    }
+    #formulario {
+        width: 100% !important;
+        padding-top: 10rem !important;
+    }
+}
+
+#fale_conosco .main {
+    background-image: url("../../assets/img/Trabalhe_conosco/bg.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    min-height: 100vh;
+}
+
+#formulario {
+    width: 50%;
+    margin-left: auto;
+    text-align: center;
+}
+
+.img-icone {
+    width: 50%;
+    padding: 10%;
+}
+
+#formulario .form-itens {
+    border-radius: 1rem;
+    background-color: white;
+    margin-top: 10rem;
+}
+
+#formulario .titulo {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: #FF9011;
+}
+
+#formulario .itens {
+    align-items: center;
+    width: 95%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+#formulario .itens input {
+    margin-left: 2.5%;
+    border: 2px solid #990099;
+}
+
+#formulario .itens select {
+    margin-left: 2.5%;
+    border: 2px solid #990099;
+}
+
+#formulario .itens textarea {
+    margin-left: 2.5%;
+    border: 2px solid #990099;
+}

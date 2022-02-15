@@ -18,19 +18,19 @@ export default {
   },
   data: function () {
     return {
-      imgs_pc: [{img:"img/Onde_estamos/Banner_web.png"}],
-      imgs_mb: [{img:"img/Onde_estamos/Banner_mb.png"}],
+      imgs_pc: [{ img: "img/Onde_estamos/Banner_web.png" }],
+      imgs_mb: [{ img: "img/Onde_estamos/Banner_mb.png" }],
       localizacoes: [
         {
           imgs_mb: [
             {
-              img: "img/Onde_estamos/galeria_mb.png",
+              img: "img/Onde_estamos/bela_vista_mb_01.png",
             },
             {
-              img: "img/Onde_estamos/galeria_mb.png",
+              img: "img/Onde_estamos/bela_vista_mb_02.png",
             },
           ],
-          img: "img/Onde_estamos/galeria.png",
+          img: "img/Onde_estamos/bela_vista_pc.png",
           localizacao: "Shopping Bela vista",
           horario: `Segunda à sábado: Das 09:00h às 22:00h
                     Domingos: Das 13:00h às 21:00h`,
@@ -44,13 +44,16 @@ export default {
         {
           imgs_mb: [
             {
-              img: "img/Onde_estamos/galeria_mb.png",
+              img: "img/Onde_estamos/ssa_mb_01.png",
             },
             {
-              img: "img/Onde_estamos/galeria_mb.png",
+              img: "img/Onde_estamos/ssa_mb_02.png",
+            },
+            {
+              img: "img/Onde_estamos/ssa_mb_03.png",
             },
           ],
-          img: "img/Onde_estamos/galeria.png",
+          img: "img/Onde_estamos/ssa_pc.png",
           localizacao: "Shopping Salvador",
           horario: `Segunda à sábado: Das 09:00h às 22:00h
                     Domingos: Das 13:00h às 21:00h`,
