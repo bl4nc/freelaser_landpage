@@ -23,6 +23,7 @@ export default {
       form: {
         data_ini: "",
         data_fim: "",
+        relatorio: null,
       },
     };
   },
@@ -34,9 +35,10 @@ export default {
     baixarRelatorio() {
       this.form.data_ini = document.getElementById("ini").value;
       this.form.data_fim = document.getElementById("fim").value;
+      this.form.relatorio = document.getElementById('select_relatorio').value
       console.log(this.form);
       window.open(
-        `http://freelaser.com.br/teste/api/baixarRelatorioLead?data_inicial=${this.form.data_ini}&data_final=${this.form.data_fim}&passwd=adm_fl`,
+        `http://freelaser.com.br/teste/api/baixarRelatorio${this.form.relatorio}?data_inicial=${this.form.data_ini}&data_final=${this.form.data_fim}&passwd=adm_fl`,
         "_blank"
       );
     },

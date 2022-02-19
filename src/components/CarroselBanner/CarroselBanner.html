@@ -1,13 +1,23 @@
 <div class="banners">
     <div id="banners" class="carousel slide d-none d-md-block" data-ride="carousel">
         <div class="carousel-inner">
-            <div v-for="(img,i) in imgs_pc" :class="{active: i == 0}" class="carousel-item " data-interval="3000">
-                <a v-if="img.link" :href="img.link" target="_blank">
-                    <img :src="getImgUrl(img.img)" class="d-block w-100">
-                </a>
-                <a v-else href="#">
-                    <img :src="getImgUrl(img.img)" class="d-block w-100">
-                </a>
+            <div v-for="(img,i) in imgs_pc" :class="{active: i == 0}" class="carousel-item " data-interval="5000">
+                <div class="" v-if="img.interno">
+                    <router-link v-if="img.link" :to="`./${img.link}`">
+                        <img :src="getImgUrl(img.img)" class="d-block w-100">
+                    </router-link>
+                    <router-link v-else>
+                        <img :src="getImgUrl(img.img)" class="d-block w-100">
+                    </router-link>
+                </div>
+                <div v-else>
+                    <a v-if="img.link" :href="img.link" target="_blank">
+                        <img :src="getImgUrl(img.img)" class="d-block w-100">
+                    </a>
+                    <a v-else href="#">
+                        <img :src="getImgUrl(img.img)" class="d-block w-100">
+                    </a>
+                </div>
             </div>
         </div>
         <button v-if="slide" class="carousel-control-prev" type="button" data-target="#banners" data-slide="prev">
@@ -22,13 +32,23 @@
 
     <div id="banners_01_mb" class="carousel slide d-sm-block d-md-none" data-ride="carousel">
         <div class="carousel-inner">
-            <div v-for="(img,i) in imgs_mb" :class="{active: i == 0}" class="carousel-item" data-interval="3000">
-                <a v-if="img.link" :href="img.link" target="_blank">
-                    <img :src="getImgUrl(img.img)" class="d-block w-100">
-                </a>
-                <a v-else href="#">
-                    <img :src="getImgUrl(img.img)" class="d-block w-100">
-                </a>
+            <div v-for="(img,i) in imgs_mb" :class="{active: i == 0}" class="carousel-item" data-interval="5000">
+                <div class="" v-if="img.interno">
+                    <router-link v-if="img.link" to="`./${img.link}`">
+                        <img :src="getImgUrl(img.img)" class="d-block w-100">
+                    </router-link>
+                    <router-link v-else>
+                        <img :src="getImgUrl(img.img)" class="d-block w-100">
+                    </router-link>
+                </div>
+                <div v-else>
+                    <a v-if="img.link" :href="img.link" target="_blank">
+                        <img :src="getImgUrl(img.img)" class="d-block w-100">
+                    </a>
+                    <a v-else href="#">
+                        <img :src="getImgUrl(img.img)" class="d-block w-100">
+                    </a>
+                </div>
             </div>
         </div>
         <button v-if="slide" class="carousel-control-prev" type="button" data-target="#banners_01_mb" data-slide="prev">

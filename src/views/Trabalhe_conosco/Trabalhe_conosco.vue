@@ -32,7 +32,7 @@ export default {
   },
 
   methods: {
-    uploadFile(form) {
+    uploadFile() {
       const swal = this.$swal;
       swal
         .fire({
@@ -58,27 +58,29 @@ export default {
               </div>
               `,
             });
-            console.log(form)
-            let formData = new FormData();
-            let arquivo = form.target[4];
-            console.log(arquivo.files[0])
-            formData.append("arq", arquivo.files[0]);
-            const send = {
-              arquivo: formData,
-              form: this.form,
-            };
-            console.log(formData)
+            const formData = new FormData();
+            let arquivo = document.getElementById(`upload_file`);
+            formData.append("file", arquivo.files[0]);
+            formData.append("nome", this.form.nome);
+            formData.append("email", this.form.email);
+            formData.append("celular", this.form.celular);
+            formData.append("vaga", this.form.vaga);
             axios
-              .post("http://localhost:9000/enviarDadosTrabalheConosco", send)
-
-              // .post(`${this.api}/enviarDadosTrabalheConosco`, send, {})
+              .post(
+                `../teste/api/enviarDadosTrabalheConosco`,
+                // "http://localhost:9000/enviarDadosTrabalheConosco",
+                formData,
+                {
+                  headers: {
+                    "Content-Type": "multipart/form-data",
+                  },
+                }
+              )
               .then(function (resp) {
                 if (resp.data.success) {
                   swal({
-                    title: `<div>
-                                <h4>Dados enviados com sucesso!</h4>
-                                  <img src='../../assets/img/success_gif.gif' width="100%">
-                              </div>`,
+                    icon: "success",
+                    title: resp.data.message,
                     allowEscapeKey: false,
                     allowOutsideClick: false,
                   }).then(() => {
@@ -92,7 +94,7 @@ export default {
                       text: resp.data.message,
                     })
                     .then(() => {
-                      // location.reload();0
+                      location.reload();
                     });
                 }
               })
