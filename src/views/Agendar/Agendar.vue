@@ -50,8 +50,8 @@ export default {
         `,
       });
       axios
-        // .post("../teste/api/insertAgendamento", this.form)
-        .post("http://localhost:9000/insertAgendamento", this.form)
+        .post("../teste/api/insertAgendamento", this.form)
+        // .post("http://localhost:9000/insertAgendamento", this.form)
         .then(function (resp) {
           swal({
             icon: "success",
