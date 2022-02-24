@@ -103,7 +103,12 @@ const router = new VueRouter({
     // mode: 'history',     
     routes,
     scrollBehavior() {
-        document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
+        if (location.href.split('=')[1]) {
+            window.location.href = `#${location.href.split('=')[1]}`;
+        } else {
+            document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
+        }
+
     }
 })
 

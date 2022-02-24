@@ -15,10 +15,7 @@ export default {
 
   methods: {
 
-    beforeCreate(){
-      console.log('Entrei')
-      window.scrollTo(0, 0);
-    }
+    
   },
 };
 </script>

@@ -23,7 +23,7 @@ export default {
         nome: null,
         email: null,
         celular: null,
-        mensagem: "Digite a sua mensagem aqui.",
+        mensagem: null,
         assunto: null,
       },
     };
@@ -31,7 +31,7 @@ export default {
 
   methods: {
     setAssunto(el) {
-      this.form.assunto = (el.target.value)
+      this.form.assunto = el.target.value;
     },
     SendForm() {
       const swal = this.$swal;
@@ -56,8 +56,8 @@ export default {
             allowOutsideClick: false,
             allowEscapeKey: false,
             title: resp.data.message,
-          }).then(()=>{
-            location.reload()
+          }).then(() => {
+            location.reload();
           });
         })
         .catch(function (err) {

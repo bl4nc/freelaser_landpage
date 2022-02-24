@@ -81,7 +81,7 @@ export default {
               img: "img/pg_depilacao_a_laser/areas_f/frente/-_VIRILHAB.png",
             },
              {
-              caracteristica: "VIRILHA PARTE ÍNTIMA",
+              caracteristica: "VIRILHA ÍNTIMA",
               img: "img/pg_depilacao_a_laser/areas_f/frente/-_VIRILHAI.png",
             },
              {

@@ -95,7 +95,7 @@ export default {
               img: "img/pg_depilacao_a_laser/areas_m/costas/__AXILAS.png",
             },
             {
-              caracteristica: "COSTAS INFERIO",
+              caracteristica: "COSTAS INFERIOR",
               img: "img/pg_depilacao_a_laser/areas_m/costas/__COSTAS INFERIOR.png",
             },
             {

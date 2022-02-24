@@ -35,7 +35,15 @@
     text-align: center;
 }
 
-#__banner_02 h5 {
+#__banner_02 h4 {
+    font-weight: 600;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+#__banner_02 h5.card-title {
+    color: #FF9011 !important;
     font-weight: 600;
     margin-bottom: 3rem;
     margin-top: 5rem;

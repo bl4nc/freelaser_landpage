@@ -9,13 +9,17 @@
                     <h5 class="btn btn-purple c-none fw-700" style="padding-left: 6rem; padding-right: 6rem;">AGENDE SUA AVALIAÇÃO</h5>
                 </div>
                 <div class="mt-1 mb-1">
-                    <form class="text-center">
-                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="text" placeholder="Nome">
-                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="text" placeholder="Telefone">
-                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="text" placeholder="Unidade">
-                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="text" placeholder="Cidade">
-                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="email" placeholder="Email">
-                        <textarea placeholder="Mensagem" style="resize: none;border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" rows="5"></textarea>
+                    <form class="text-center" v-on:submit.prevent="SendForm">
+                        <input style="border: 2px solid #990099;" v-model="form.nome" class="form-control c-purple mt-2 mb-2" type="text" placeholder="Nome">
+                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" v-mask="'(##) #####-####'" v-model="form.celular" type="text" placeholder="Telefone">
+                        <select v-on:change="setUnidade($event)" id="unidade" class="form-control" style="border: 2px solid #990099;" name="unidade">
+                            <option selected disabled>Escolha uma opção!</option>
+                            <option>Salvador Shopping</option>
+                            <option>Shopping Bela Vista</option>
+                        </select>
+                        <input v-model="form.cidade" style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="text" placeholder="Cidade">
+                        <input v-model="form.email" style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="email" placeholder="Email">
+                        <textarea v-model="form.mensagem" placeholder="Mensagem" style="resize: none;border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" rows="5"></textarea>
                         <button class="btn btn-orange c-none fw-700 mt-2 mb-2 pl-5 pr-5">AGENDAR</button>
                     </form>
                 </div>
@@ -23,5 +27,5 @@
         </div>
     </div>
     <Footer></Footer>
-    <WhatsappIcon :link="`https://api.whatsapp.com/send?phone=557199700077`"></WhatsappIcon>
+    <WhatsappIcon :link="`https://api.whatsapp.com/send?l=pt&phone=5571999700077&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Freelaser%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es`"></WhatsappIcon>
 </div>
