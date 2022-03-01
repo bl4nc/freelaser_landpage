@@ -51,7 +51,7 @@ export default {
             allowEscapeKey: false,
             title: resp.data.message,
           });
-           router.push("/agradecimento");
+          router.push("/agradecimento");
         })
         .catch(function (err) {
           swal({
@@ -63,6 +63,26 @@ export default {
           });
         });
     },
+  },
+
+  created() {
+    const swal = this.$swal;
+    swal({
+      showConfirmButton: false,
+      allowOutsideClick: false,
+      allowEscapeKey: false,
+      title: "Enviando",
+      html: `
+        <div class="spinner-border mt-2 mb-2" style="width: 3rem; height: 3rem; overflow:hidden;" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        `,
+    });
+  },
+
+  mounted() {
+    const swal = this.$swal;
+    swal.close();
   },
 };
 </script>
