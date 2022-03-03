@@ -185,6 +185,5 @@ export default {
 };
 </script>
 
-<style scoped>
-@import url("./Depilacao_Masculina.css");
+<style scoped src="./Depilacao_Masculina.css">
 </style>

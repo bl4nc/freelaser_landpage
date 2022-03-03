@@ -88,7 +88,7 @@ const routes = [{
         component: Area_Cliente
     },
     {
-        path: '/tl_admin/:pass',
+        path: '/tl_admin/:tk',
         name: 'Admin',
         component: BaixarRelatorio
     },

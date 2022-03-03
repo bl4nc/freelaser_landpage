@@ -77,11 +77,12 @@ export default {
               img: "img/pg_depilacao_a_laser/areas_f/frente/-_SEIO.png",
             },
             {
-              caracteristica: "VIRILHA BIQUÍNI",
+             
+              caracteristica: "VIRILHA ÍNTIMA",
               img: "img/pg_depilacao_a_laser/areas_f/frente/-_VIRILHAB.png",
             },
              {
-              caracteristica: "VIRILHA ÍNTIMA",
+              caracteristica: " VIRILHA BIQUÍNI",
               img: "img/pg_depilacao_a_laser/areas_f/frente/-_VIRILHAI.png",
             },
              {

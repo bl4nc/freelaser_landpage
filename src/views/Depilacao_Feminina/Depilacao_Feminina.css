@@ -17,6 +17,12 @@
     }
 }
 
+h6.title {
+    color: #FF9011 !important;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
 #__banner_02 #textos h1 {
     text-align: center !important;
     font-size: 3rem;
@@ -38,7 +44,7 @@
 #__banner_02 h4 {
     font-weight: 600;
     margin-bottom: 3rem;
-    margin-top: 5rem;
+    /* margin-top: 5rem;; */
     text-align: center;
 }
 
@@ -46,7 +52,7 @@
     color: #FF9011 !important;
     font-weight: 600;
     margin-bottom: 3rem;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     text-align: center;
 }
 
