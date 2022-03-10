@@ -46,7 +46,7 @@ export default {
           textos: [
             {
               texto:
-                "Em média, 10 sessões. Contudo, em alguns casos esta quantidade pode não ser suficiente devido afatores hormonais e genéticos.",
+                "Em média, 10 sessões. Contudo, em alguns casos esta quantidade pode não ser suficiente devido a fatores hormonais e genéticos.",
             },
           ],
 

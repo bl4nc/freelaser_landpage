@@ -32,11 +32,20 @@ export default {
           ],
           img: "img/Onde_estamos/bela_vista_pc.png",
           localizacao: "Shopping Bela vista",
-          horario: `Segunda à sábado: Das 09:00h às 22:00h
-                    Domingos: Das 13:00h às 21:00h`,
+
+          horario: [
+            {
+              texto: `Segunda à sábado: Das 09:00h às 22:00h`,
+            },
+            {
+              texto: `Domingos: Das 13:00h às 21:00h`,
+            },
+          ],
+
           telefone: "(71) 3039-0007",
           whatsapp: "(71) 9.9970-0077",
-          link_whats_web: "https://api.whatsapp.com/send?l=pt&phone=5571999700077&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Freelaser%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es",
+          link_whats_web:
+            "https://api.whatsapp.com/send?l=pt&phone=5571999700077&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Freelaser%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es",
           endereco:
             "Al. Euvaldo Luz, 92 – Shopping Bela Vista, Piso L2 – Loja L 31.2 - Horto Bela Vista, Salvador/BA.",
           link_localizacao: "https://goo.gl/maps/hPdZW7mGMkGCvq8e8",
@@ -55,11 +64,18 @@ export default {
           ],
           img: "img/Onde_estamos/ssa_pc.png",
           localizacao: "Shopping Salvador",
-          horario: `Segunda à sábado: Das 09:00h às 22:00h
-                    Domingos: Das 13:00h às 21:00h`,
+          horario: [
+            {
+              texto: `Segunda à sábado: Das 09:00h às 22:00h`,
+            },
+            {
+              texto: `Domingos: Das 13:00h às 21:00h`,
+            },
+          ],
           telefone: "(71) 3039-0007",
           whatsapp: "(71) 9.9970-0077",
-          link_whats_web: "https://api.whatsapp.com/send?l=pt&phone=5571999700077&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Freelaser%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es",
+          link_whats_web:
+            "https://api.whatsapp.com/send?l=pt&phone=5571999700077&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Freelaser%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es",
           endereco:
             "Avenida Tancredo Neves, 3133 – Salvador Shopping, 1° Piso - Loja 1153 - Caminho das Árvores, Salvador/BA.",
           link_localizacao: "https://goo.gl/maps/88Y37zMySgshDhD17",
