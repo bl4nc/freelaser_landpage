@@ -98,3 +98,10 @@
     .navbar-light .navbar-nav .show>.nav-link {
         color: #d100d1 !important;
     }
+    
+    @media (min-width: 600px) {
+        div.navbar-nav.text-center {
+            margin-right: 5rem;
+            margin-left: 5rem;
+        }
+    }

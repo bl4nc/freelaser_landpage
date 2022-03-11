@@ -1,59 +1,56 @@
 <div class="container-fluid w-100">
     <nav class="nav navbar navbar-expand-lg navbar-light justify-content-center">
-        <div class="row no-gutters w-100">
+        <div class="row no-gutters w-100" style="justify-content: center;">
             <div class="fixed-itens col-lg-12">
-                <form class="form-inline my-2 my-lg-0 d-none d-md-flex">
+                <form class="form-inline my-2 my-lg-0 d-none d-md-flex" style="margin-left: 5rem;margin-right: 5rem;     align-items: flex-end;">
                     <router-link class="navbar-brand" to="./">
                         <img src="../../assets/img/logo.png" width="200px">
-
                     </router-link>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- <input class="form-control w-40">
-                    <a class="my-3 my-sm-0" type="submit">
-                        <img src="../../assets/img/icons/lupa.png" class="icon">
-                    </a> -->
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                    <!-- <a class="my-2 my-sm-0">
-                        <img src="../../assets/img/icons/carrinho.png" class="icon">
-                    </a> -->
-
-                    <a target="_blank" href="https://api.whatsapp.com/send?l=pt&phone=5571999700077&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Freelaser%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" class="my-2 my-sm-0 ml-5 mr-5 pointer ml-auto">
-                        <img src="../../assets/img/icons/whatsapp.png" class="icon">
-                    </a>
-                    <router-link to="./agendar" class="btn shadow" id="btn_area_cliente">
-                        AGENDE SUA AVALIAÇÃO
-                    </router-link>
+                    <div class="d-flex flex-column text-right">
+                        <a class="p-0 mb-1 nav-link c-pointer ml-0 mr-0 pl-0 pr-0" style="color:gray; font-weight: 500;" href="tel:+557130390007">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>SAC
+                            FREE: (71)3039-0007
+                        </a>
+                        <div class="d-flex flex-row" style="align-items: center;">
+                            <a target="_blank" href="https://api.whatsapp.com/send?l=pt&phone=5571999700077&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Freelaser%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" class="my-2 my-sm-0 ml-5 mr-5 pointer ml-auto">
+                                <img src="../../assets/img/icons/whatsapp.png" class="icon">
+                            </a>
+                            <router-link to="./agendar" class="btn shadow" id="btn_area_cliente">
+                                AGENDE SUA AVALIAÇÃO
+                            </router-link>
+                        </div>
+                    </div>
                 </form>
-
+                <hr class="d-none d-md-block" style="color: #990099;
+                background: #990099;
+                height: 0.05rem;">
                 <form class="form-inline my-2 my-lg-0 d-md-none d-sm-block w-100">
                     <router-link class="navbar-brand" to="./">
                         <img src="../../assets/img/logo.png" width="150px">
                     </router-link>
 
-                    <!-- <input class="form-control w-40 d-none d-md-block"> -->
-                    <!-- <a class="py-0">
-                        <img src="../../assets/img/icons/carrinho.png" class="icon">
-                    </a> -->
                     <a target="_blank" href="https://api.whatsapp.com/send?l=pt&phone=5571999700077&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Freelaser%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" class="py-0 pointer ml-auto mr-3">
                         <img src="../../assets/img/icons/whatsapp.png" class="icon">
                     </a>
-                    <!-- <router-link to="./login">
-                        <img src="../../assets/img/icons/user.png" class="icon">
-                    </router-link> -->
 
                     <button class="navbar-toggler m-0 p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <!-- <input class="form-control w-80">
-                    <a class="my-3 my-sm-0" type="submit">
-                        <img src="../../assets/img/icons/lupa.png" class="icon">
-                    </a> -->
+
                 </form>
             </div>
             <div class="collapse navbar-collapse col-lg-12" id="navbarSupportedContent">
-                <div class="navbar-nav mr-auto mt-2 text-center">
+                <div class="navbar-nav text-center">
+                    <div class="">
+                        <a class="p-0 mt-3 pt-2 pb-2 mb-1 nav-link c-pointer ml-0 mr-0 pl-0 pr-0" style="color: #990099; font-weight: 500;" href="tel:+557130390007">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone mr-2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>SAC
+                            FREE: (71)3039-0007
+                        </a>
+                    </div>
                     <div class="nav-item">
                         <router-link class="nav-link" to="./quem_somos">
                             A FREELASER
@@ -82,12 +79,6 @@
                             ONDE ESTAMOS
                         </router-link>
                     </div>
-
-                    <!-- <div class="nav-item">
-                        <router-link class="nav-link" to="#">
-                            BLOG DA FREE
-                        </router-link>
-                    </div> -->
                     <div class="nav-item">
                         <router-link class="nav-link" to="./faq">
                             PERGUNTAS FREQUENTES
@@ -99,19 +90,8 @@
                             FALE COM A FREE
                         </router-link>
                     </div>
-                    <!-- <div class="nav-item">
-                        <a class="nav-link" href="#">FREECLUB</a>
-                    </div> -->
-                    <!-- <div class="nav-item">
-                        <a class="nav-link" href="#">BLOG DA FREE</a>
-                    </div>
-                    <div class="nav-item">
-                        <a class="nav-link" href="#">COMPRE ONLINE</a>
-                    </div> -->
-
                 </div>
             </div>
         </div>
-
     </nav>
 </div>
