@@ -10,16 +10,16 @@
                 </div>
                 <div class="mt-1 mb-1">
                     <form class="text-center" v-on:submit.prevent="SendForm">
-                        <input style="border: 2px solid #990099;" v-model="form.nome" class="form-control c-purple mt-2 mb-2" type="text" placeholder="Nome">
-                        <input style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" v-mask="'(##) #####-####'" v-model="form.celular" type="text" placeholder="Telefone">
-                        <select v-on:change="setUnidade($event)" id="unidade" class="form-control" style="border: 2px solid #990099;" name="unidade">
+                        <input required style="border: 2px solid #990099;" v-model="form.nome" class="form-control c-purple mt-2 mb-2" type="text" placeholder="Nome">
+                        <input required style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" v-mask="'(##) #####-####'" v-model="form.celular" type="text" placeholder="Telefone">
+                        <select required v-on:change="setUnidade($event)" id="unidade" class="form-control" style="border: 2px solid #990099;" name="unidade">
                             <option selected disabled>Escolha uma opção!</option>
                             <option>Salvador Shopping</option>
                             <option>Shopping Bela Vista</option>
                         </select>
-                        <input v-model="form.cidade" style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="text" placeholder="Cidade">
-                        <input v-model="form.email" style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="email" placeholder="Email">
-                        <textarea v-model="form.mensagem" placeholder="Mensagem" style="resize: none;border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" rows="5"></textarea>
+                        <input required v-model="form.cidade" style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="text" placeholder="Cidade">
+                        <input required v-model="form.email" style="border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" type="email" placeholder="Email">
+                        <textarea required v-model="form.mensagem" placeholder="Mensagem" style="resize: none;border: 2px solid #990099;" class="form-control c-purple mt-2 mb-2" rows="5"></textarea>
                         <button class="btn btn-orange c-none fw-700 mt-2 mb-2 pl-5 pr-5">AGENDAR</button>
                     </form>
                 </div>
