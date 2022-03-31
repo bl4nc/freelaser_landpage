@@ -43,7 +43,7 @@ export default {
           ],
 
           telefone: "(71) 3039-0007",
-          whatsapp: "(71) 9.9970-0077",
+          whatsapp: "(71) 9.9922-9912",
           link_whats_web:
             "https://api.whatsapp.com/send?l=pt&phone=5571999229912&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Freelaser%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.",
           endereco:
@@ -73,7 +73,7 @@ export default {
             },
           ],
           telefone: "(71) 3039-0007",
-          whatsapp: "(71) 9.9970-0077",
+          whatsapp: "(71) 9.9922-9912",
           link_whats_web:
             "https://api.whatsapp.com/send?l=pt&phone=5571999229912&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Freelaser%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.",
           endereco:

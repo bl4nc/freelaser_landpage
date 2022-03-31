@@ -57,7 +57,7 @@
                 </div>
                 <div class="col-10 text-right">
                     <p class="c-orange m-0 p-0 fw-600">HORÁRIO DE FUNCIONAMENTO</p>
-                    <p class="c-white m-0 p-0" v-for="(textos,a) in info.horario">{{textos.texto}}</p>
+                    <!-- <p class="c-white m-0 p-0" v-for="(textos,a) in info.horario">{{textos.texto}}</p> -->
                 </div>
                 <div class="col-2 mb-5">
                     <img class="img-fluid w-100" src="../../assets/img/Onde_estamos/horario_ic.png">
@@ -104,7 +104,7 @@
                 </div>
                 <div class="col-12">
                     <p class="c-orange m-0 p-0 fw-600">HORÁRIO DE FUNCIONAMENTO</p>
-                    <p class="c-white m-0 p-0">{{ info.horario }}</p>
+                    <p class="c-white m-0 p-0" v-for="(textos,a) in info.horario">{{textos.texto}}</p>
                 </div>
                 <div class="col-12 mt-4 mb-2">
                     <img class="img-fluid " style="width: 15%;" src="../../assets/img/Onde_estamos/telefone_ic.png">
