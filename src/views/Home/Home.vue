@@ -27,7 +27,7 @@ export default {
         { img: "img/banners_carrosel/banner_03.png" },
         {
           img: "img/banners_carrosel/banner_04.png",
-          link: "https://api.whatsapp.com/send?l=pt&phone=5571999700077&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Freelaser%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es",
+          link: "https://api.whatsapp.com/send?l=pt&phone=5571999229912&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Freelaser%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.",
         },
         {
           img: "img/banners_carrosel/_banner_05.jpg",
@@ -36,7 +36,7 @@ export default {
         },
         {
           img: "img/banners_carrosel/banner_06.png",
-          link: "https://api.whatsapp.com/send?l=pt&phone=5571999700077&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Freelaser%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es",
+          link: "https://api.whatsapp.com/send?l=pt&phone=5571999229912&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Freelaser%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.",
         },
       ],
 
@@ -46,7 +46,7 @@ export default {
         { img: "img/banners_carrosel/banner_03.png" },
         {
           img: "img/banners_carrosel/banner_04.png",
-          link: "https://api.whatsapp.com/send?l=pt&phone=5571999700077&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Freelaser%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es",
+          link: "https://api.whatsapp.com/send?l=pt&phone=5571999229912&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Freelaser%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.",
         },
         {
           img: "img/banners_carrosel/_banner_05.jpg",
@@ -55,7 +55,7 @@ export default {
         },
         {
           img: "img/banners_carrosel/banner_06.png",
-          link: "https://api.whatsapp.com/send?l=pt&phone=5571999700077&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Freelaser%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es",
+          link: "https://api.whatsapp.com/send?l=pt&phone=5571999229912&text=Ol%C3%A1!%20Visitei%20o%20site%20da%20Freelaser%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.",
         },
       ],
     };
