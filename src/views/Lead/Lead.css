@@ -1,3 +1,7 @@
+.capa {
+    background: linear-gradient(180deg, #EFDFBF 0%, #F0E2C3 100%);
+}
+
 #_banner_02 #dizeres {
     background: linear-gradient(90deg, #990099 5.1%, rgba(190, 43, 108, 0.930115) 69.58%);
     /* display: flex;
