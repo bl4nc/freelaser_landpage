@@ -1,24 +1,15 @@
-# freelaser_s
+# :computer: Freelaser Landpage
 
-## Project setup
-```
-npm install
-```
+![Print da tela inicial](public/Mockup.png?raw=true "Print do começo da homepage")
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## :pencil: Projeto
+Este site foi desenvolvido para como landpage para uma empresa de depilação a laser visando divulgar os serviços ofertados pela empresa. O mesmo foi desenvolvido usando as seguintes tecnlogias:
 
-### Lints and fixes files
-```
-npm run lint
-```
+- HTML
+- CSS
+- Vue2
+- JavaScript
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+**:link: Acesse o site e confira o projeto:
+https://signatura.com.br**

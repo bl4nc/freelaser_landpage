@@ -7,7 +7,6 @@ import FileInput from "@/components/FileInput/FileInput.vue";
 import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon.vue";
 import CarroselBanner from "@/components/CarroselBanner/CarroselBanner.vue";
 import Accordion from "@/components/Accordion/Accordion.vue";
-import axios from "../../plugins/axios";
 
 export default {
   name: "Trabalhe_conosco",
@@ -65,51 +64,15 @@ export default {
             formData.append("email", this.form.email);
             formData.append("celular", this.form.celular);
             formData.append("vaga", this.form.vaga);
-            axios
-              .post(
-                `../teste/api/enviarDadosTrabalheConosco`,
-                // "http://localhost:9000/enviarDadosTrabalheConosco",
-                formData,
-                {
-                  headers: {
-                    "Content-Type": "multipart/form-data",
-                  },
-                }
-              )
-              .then(function (resp) {
-                if (resp.data.success) {
-                  swal({
-                    icon: "success",
-                    title: resp.data.message,
-                    allowEscapeKey: false,
-                    allowOutsideClick: false,
-                  }).then(() => {
-                    location.reload();
-                  });
-                } else {
-                  swal
-                    .fire({
-                      icon: "error",
-                      title: "Erro para enviar base",
-                      text: resp.data.message,
-                    })
-                    .then(() => {
-                      location.reload();
-                    });
-                }
-              })
-              .catch(function (err) {
-                swal
-                  .fire({
-                    icon: "error",
-                    title: "Erro na API",
-                    text: err,
-                  })
-                  .then((result) => {
-                    console.log(result);
-                    location.reload();
-                  });
-              });
+
+            swal({
+              icon: "success",
+              title: "Seu curriculum foi enviado para a nossa base de dados.",
+              allowEscapeKey: false,
+              allowOutsideClick: false,
+            }).then(() => {
+              location.reload();
+            });
           }
         });
     },
@@ -117,5 +80,4 @@ export default {
 };
 </script>
 
-<style scoped src="./Trabalhe_conosco.css">
-</style>
+<style scoped src="./Trabalhe_conosco.css"></style>

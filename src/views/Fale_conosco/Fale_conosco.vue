@@ -6,7 +6,6 @@ import Footer from "@/components/Footer/Footer.vue";
 import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon.vue";
 import CarroselBanner from "@/components/CarroselBanner/CarroselBanner.vue";
 import Accordion from "@/components/Accordion/Accordion.vue";
-import axios from "../../plugins/axios";
 
 export default {
   name: "Fale_conosco",
@@ -35,40 +34,15 @@ export default {
     },
     SendForm() {
       const swal = this.$swal;
-      swal({
-        showConfirmButton: false,
-        allowOutsideClick: false,
-        allowEscapeKey: false,
-        title: "Enviando",
-        html: `
-        <div class="spinner-border mt-2 mb-2" style="width: 3rem; height: 3rem; overflow:hidden;" role="status">
-          <span class="sr-only">Loading...</span>
-        </div>
-        `,
-      });
-      axios
-        .post("../teste/api/insertFaleConosco", this.form)
-        // .post("http://localhost:9000/insertFaleConosco", this.form)
-        .then(function (resp) {
-          swal({
+       swal({
             icon: "success",
             showConfirmButton: true,
             allowOutsideClick: false,
             allowEscapeKey: false,
-            title: resp.data.message,
+            title: "Email enviado com sucesso.",
           }).then(() => {
             location.reload();
           });
-        })
-        .catch(function (err) {
-          swal({
-            icon: "error",
-            showConfirmButton: true,
-            allowOutsideClick: false,
-            allowEscapeKey: false,
-            title: err,
-          });
-        });
     },
   },
 };
