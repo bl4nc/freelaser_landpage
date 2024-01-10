@@ -12,4 +12,4 @@ Este site foi desenvolvido para como landpage para uma empresa de depilação a 
 - JavaScript
 
 **:link: Acesse o site e confira o projeto:
-https://signatura.com.br**
+https://freelaser-landpage.vercel.app/#/**
